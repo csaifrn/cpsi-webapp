@@ -13,3 +13,6 @@ $ npm run dev
 
 ## Equipe
 
+<div align=center>
+  <a href="https://github.com/IzabelAlice"><img  src = "./equipe/foto_izabel.png" alt="Foto Izabel" height="174"></a>
+</div>
