@@ -2,7 +2,7 @@
 
 ## Informações do projeto
 
-<p>O projeto é um web site para o programa chamado cpsi que visa incentivar a boa saúde para pessoas idosas, oferecendo um conjunto com mais de 60 atividades, podendo ser tanto físicas quanto mentais, alguns exemplos são: hidroginástica, exercícios de memória, atividades artísticas e etc.<p>
+<p>O projeto é um site de apoio para o programa chamado cpsi que visa incentivar a boa saúde para pessoas idosas, oferecendo um conjunto com mais de 60 atividades, podendo ser tanto físicas quanto mentais, alguns exemplos são: hidroginástica, exercícios de memória, atividades artísticas e etc.<p>
 
 ## Para executar
 
