@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "CPSI",
-  description: "Projeto CPSI",
+  title: "CPSI login",
+  description: "Projeto CPSI - Página de login",
 };
 
 export default function RootLayout({

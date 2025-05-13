@@ -1,3 +1,9 @@
+import { Poppins } from "next/font/google";
+import "./globals.css";
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+});
 
 
 const LoginModal = () => {
@@ -15,7 +21,9 @@ const LoginModal = () => {
                 </figure>
             </header>
             <main className="bg-white w-full h-full ">
-                <h1 className="text-blue-500 text-2xl flex justify-center">Cadastra-se</h1>
+                <h1 className="text-blue-500 text-xl flex justify-center text-center font-medium py-9">
+                    Seja bem-vindo<br></br>Faça login ou cadastre-se 
+                </h1>
                 <form className="flex align-center justify-center flex-col">
                     <div className="flex justify-center flex-col gap-1.5">
                         <span className="text-blue-500">Cpf</span>  
