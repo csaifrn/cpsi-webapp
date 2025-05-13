@@ -25,33 +25,35 @@ const LoginModal = () => {
                     Seja bem-vindo<br></br>Faça login ou cadastre-se 
                 </h1>
                 <form className="flex align-center justify-center flex-col">
-                    <div className="flex justify-center flex-col gap-1.5">
+                    <div className="flex justify-center items-center flex-col gap-1.5">
                         <span className="text-blue-500">Cpf</span>  
                         <div className="flex flex-row border-b-3 border-gray-200 w-70 gap-x-6">
-                            <figure><img src="@/app/Vector.png"/></figure>
+                            <figure><img className="mt-1.5" height="24px" width="24px" src="/Vector.svg"/></figure>
                             <input
                                 type="text"
                                 placeholder="Digite seu cpf"
-                                className="w-70 h-8 text-gray-800"
+                                className="w-70 h-8 text-gray-800 tex-sm"
                             />
                         </div>
-                        <span className="text-blue-500">Senha</span>
+                        <span className="text-blue-500  mt-3 ">Senha</span>
                         <div className="flex flex-row border-b-3 border-gray-200 w-70 gap-x-6">
-                            <figure><img src="@/app/lock_FILL0_wght400_GRAD0_opsz48 1.png"/></figure>
+                            <figure><img className="mt-0.5" height="30px" width="30px" src="/lock_FILL0_wght400_GRAD0_opsz48 1.svg"/></figure>
                             <input
                                 type="password"
                                 placeholder="Digite sua senha"
-                                className="w-70 h-8 text-gray-800"
+                                className="w-70 h-8 text-gray-800 tex-sm flex justify-center"
                             />
                         </div>
 
-                        <button className="w-75 h-10 text-white bg-blue-500 rounded-4xl">Cadastra-se</button>
+                        <button className="w-75 h-10 text-sm text-white bg-blue-500 rounded-4xl mt-20">Cadastra-se</button>
                     </div>
                 </form>
-                <p className="text-gray-400">se já possuir uma conta faça login <b className="text-black">aqui</b></p>
+                <p className="text-gray-400 mt-30 text-center">se já possuir uma conta <br/>faça login <b className="text-black">aqui</b></p>
             </main>
         </div>
     )
 };
 
 export default LoginModal ;
+
+
