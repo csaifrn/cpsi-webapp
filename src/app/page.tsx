@@ -48,7 +48,7 @@ const LoginModal = () => {
                                 />
                             </div>
                         </div>
-                        <a href="" className="text-xs text-gray-400 mt-1 self-end mr-6">Esqueceu a senha?</a>
+                        <a href="" className="text-xs text-gray-400 mt-1 ml-45">Esqueceu a senha?</a>
                         <button className="w-75 h-10 text-sm text-white bg-blue-500 rounded-4xl mt-5 ">Login</button>
                     </div>
                 </form>
