@@ -1,4 +1,4 @@
-import { Poppins } from "next/font/google";
+    import { Poppins } from "next/font/google";
 import "./globals.css";
 const poppins = Poppins({
   subsets: ["latin"],
@@ -25,27 +25,31 @@ const LoginModal = () => {
                     Seja bem-vindo<br></br>Faça login ou cadastre-se 
                 </h1>
                 <form className="flex align-center justify-center flex-col">
-                    <div className="flex justify-center items-center flex-col gap-1.5">
-                        <span className="text-blue-500">Cpf</span>  
-                        <div className="flex flex-row border-b-3 border-gray-200 w-70 gap-x-6">
-                            <figure><img className="mt-1.5" height="24px" width="24px" src="/Vector.svg"/></figure>
-                            <input
-                                type="text"
-                                placeholder="Digite seu cpf"
-                                className="w-70 h-8 text-gray-800 tex-sm"
-                            />
+                    <div className="flex justify-center items-center flex-col">
+                        <div className="mb-5">
+                            <span className="text-blue-500 self-start">CPF</span>  
+                            <div className="flex flex-row border-b-1 border-gray-200 w-75 gap-x-6 px-2">
+                                <figure className="flex justify-center items-center"><img className="" height="18px" width="18px" src="/Vector.svg"/></figure>
+                                <input
+                                    type="text"
+                                    placeholder="Digite seu CPF"
+                                    className="w-70 h-8 text-gray-800 text-xs"
+                                />
+                            </div>
                         </div>
-                        <span className="text-blue-500  mt-3 ">Senha</span>
-                        <div className="flex flex-row border-b-3 border-gray-200 w-70 gap-x-6">
-                            <figure><img className="mt-0.5" height="30px" width="30px" src="/lock_FILL0_wght400_GRAD0_opsz48 1.svg"/></figure>
-                            <input
-                                type="password"
-                                placeholder="Digite sua senha"
-                                className="w-70 h-8 text-gray-800 tex-sm flex justify-center"
-                            />
+                        <div>
+                            <span className="text-blue-500 self-start">Senha</span>
+                            <div className="flex flex-row border-b-1 border-gray-200 w-75 gap-5.5 px-2">
+                                <figure className="flex justify-center items-center"><img className="" height="23px" width="23px" src="/lock_FILL0_wght400_GRAD0_opsz48 1.svg"/></figure>
+                                <input
+                                    type="password"
+                                    placeholder="Digite sua senha"
+                                    className="w-70 h-8 text-gray-800 text-xs flex justify-center"
+                                />
+                            </div>
                         </div>
-
-                        <button className="w-75 h-10 text-sm text-white bg-blue-500 rounded-4xl mt-20">Cadastra-se</button>
+                        <a href="" >Esqueceu a senha?</a>
+                        <button className="w-70 h-10 text-sm text-white bg-blue-500 rounded-4xl mt-20 ">Login</button>
                     </div>
                 </form>
                 <p className="text-gray-400 mt-30 text-center">se já possuir uma conta <br/>faça login <b className="text-black">aqui</b></p>
