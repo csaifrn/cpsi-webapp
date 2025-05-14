@@ -1,4 +1,4 @@
-    import { Poppins } from "next/font/google";
+    import { Poppins, ZCOOL_KuaiLe } from "next/font/google";
 import "./globals.css";
 const poppins = Poppins({
   subsets: ["latin"],
@@ -48,16 +48,19 @@ const LoginModal = () => {
                                 />
                             </div>
                         </div>
-                        <a href="" >Esqueceu a senha?</a>
-                        <button className="w-70 h-10 text-sm text-white bg-blue-500 rounded-4xl mt-20 ">Login</button>
+                        <a href="" className="text-xs text-gray-400 mt-1 self-end mr-6">Esqueceu a senha?</a>
+                        <button className="w-75 h-10 text-sm text-white bg-blue-500 rounded-4xl mt-5 ">Login</button>
                     </div>
                 </form>
-                <p className="text-gray-400 mt-30 text-center">se já possuir uma conta <br/>faça login <b className="text-black">aqui</b></p>
+                <div className="flex justify-center items-center flex-col mt-10">
+                    <p className="text-gray-400 text-xs text-center ">Ou faça login também com</p>
+                    <button className="mt-2 w-42 h-8 rounded-4xl border-3 border-gray-300 flex justify-center items-center"><img width="60px" height="60px" src="/logos_google.svg" alt="botão do google"/></button>    
+                </div>
+                <p className="text-gray-400 mt-15 text-center text-xs">se não possuir uma conta <br/>Cadastre-se <b className="text-black"><a href="">aqui</a></b></p>
             </main>
         </div>
     )
 };
 
 export default LoginModal ;
-
 
