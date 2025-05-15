@@ -1,103 +1,53 @@
-import Image from "next/image";
+import React from "react";
+import { Poppins, ZCOOL_KuaiLe } from "next/font/google";
+import "./globals.css";
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+});
 
-export default function Home() {
+const DadosPessoais = () => {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <section className="min-h-screen bg-white">
+      <div className="bg-indigo-500 text-white p-4 flex justify-between items-center">
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+        <span className="bg-white/30 w-10 h-10 flex items-center justify-center rounded-lg">
+            <img src="/casa.png" alt="casa" className="w-5 h-5" />
+        </span>
+        <span className="bg-white/30 w-10 h-10 flex items-center justify-center rounded-lg">
+            <img src="/menu.png" alt="casa" className="w-5 h-5" />
+        </span>
+      </div>
+
+      <div className="p-4 max-w-md mx-auto text-gray-900 font-courier-prime">
+        <div className="flex items-center text-lg font-semibold mb-4">
+          <button aria-label="Voltar" className="mr-2"> <img src="/seta.png" alt="" /></button>
+          <span>Dados Pessoais</span>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+
+        <div className="border border-purple-500 rounded-lg overflow-hidden shadow-md">
+          <div className="bg-indigo-500 text-white p-8 flex items-center gap-4">
+            <img src="/idosa.jpg" alt="Foto do idoso"className="w-16 h-16 rounded-full border-2 border-white"/>
+            <span className="font-bold text-lg font-courier-prime"> Adeilda Conceição Gomes da Silva</span>
+          </div>
+
+          <div className="p-7 space-y-1 text-lg text-gray-900 font-courier-prime">
+            <p>CPF: 123.456.789-00</p>
+            <p>Idade: 61</p>
+            <p>Data de nascimento: 06/12/1960</p>
+            <p>Tel. Contato: (84) 9 9999-9999</p>
+          </div>
+
+          <div className="border-t border-purple-500 px-7 py-6 text-lg text-gray-900">
+            <p className="font-bold text-gray-900 mb-1 font-courier-prime">Contato de Emergência</p>
+            <p>Nome: Kamila</p>
+            <p>Vínculo: Filha</p>
+            <p>Tel. Emergência: (84) 8 8888-8888</p>
+          </div>
+        </div>
+      </div>
+    </section>
   );
-}
+};
+
+export default DadosPessoais;
