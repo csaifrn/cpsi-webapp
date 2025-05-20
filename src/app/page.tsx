@@ -48,14 +48,14 @@ const DadosPessoais = () => {
 
 const Atividades = () => {
   return (
-    <section className="p-4 max-w-md mx-auto text-gray-900 font-courier-prime">
-        <h2>Atividades</h2>
+    <section className=" text-gray-900 bg-white font-courier-prime min-h-screen">
+        <h2 className=" font-bold text-lg">Atividades</h2>
         <nav>
             <button>Extensão</button>
             <button>Ensino</button>
         </nav>
-        <div>
-            <table className="w-full border-collapse border border-gray-300">
+        <div >
+            <table className="uppercase w-20 border border-indigo-500 rounded-md">
                 <tr>
                     <td>Atividade</td>
                     <td>Turma</td>
@@ -67,6 +67,21 @@ const Atividades = () => {
                     7:00-7:45<br></br>
                     Sala 1
                     </td>
+                    <td>Null</td>
+                </tr>
+                <tr>
+                  <td>Coral</td>
+                  <td>TERÇA-FEIRA<br></br>
+                  7:45-8:00<br></br>
+                  SALA 3</td>
+                  <td>Null</td>
+                </tr>
+                <tr>
+                  <td>Musculação</td>
+                  <td>QUARTA-FEIRA<br></br>
+                  7:00-7:45<br></br>
+                  SALA 1</td>
+                  <td>Null</td>
                 </tr>
             </table>
         </div>
