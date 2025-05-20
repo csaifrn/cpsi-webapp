@@ -6,7 +6,9 @@ const DadosPessoais = () => {
       <div className="bg-indigo-500 text-white p-4 flex justify-between items-center">
 
         <span className="bg-white/30 w-10 h-10 flex items-center justify-center rounded-lg">
-            <img src="/casa.png" alt="casa" className="w-5 h-5" />
+            <a>
+                <img src="/casa.png" alt="casa" className="w-5 h-5" />
+            </a>
         </span>
         <span className="bg-white/30 w-10 h-10 flex items-center justify-center rounded-lg">
             <img src="/menu.png" alt="casa" className="w-5 h-5" />
@@ -44,4 +46,41 @@ const DadosPessoais = () => {
   );
 };
 
-export default DadosPessoais;
+const Atividades = () => {
+  return (
+    <section className="p-4 max-w-md mx-auto text-gray-900 font-courier-prime">
+        <h2>Atividades</h2>
+        <nav>
+            <button>Extensão</button>
+            <button>Ensino</button>
+        </nav>
+        <div>
+            <table className="w-full border-collapse border border-gray-300">
+                <tr>
+                    <td>Atividade</td>
+                    <td>Turma</td>
+                    <td>Professor</td>
+                </tr>
+                <tr>
+                    <td>Dança</td>
+                    <td>Terça-feira<br></br>
+                    7:00-7:45<br></br>
+                    Sala 1
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </section>
+  );
+}
+
+const Home = () => {
+    return (
+        <div className="min-h-screen bg-gray-100">
+            <DadosPessoais />
+            <Atividades />
+        </div>
+    );
+}
+
+export default Home; 
