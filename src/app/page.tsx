@@ -48,41 +48,41 @@ const DadosPessoais = () => {
 
 const Atividades = () => {
   return (
-    <section className=" text-gray-900 bg-white font-courier-prime min-h-screen">
+    <section className=" text-gray-900 font-courier-prime h-screen flex flex-col max-w-md items-center">
         <h2 className=" font-bold text-lg">Atividades</h2>
-        <nav>
+        <nav className="justify-items-start bg-green-500"> 
             <button>Extensão</button>
             <button>Ensino</button>
         </nav>
         <div >
             <table className="uppercase w-20 border border-indigo-500 rounded-md">
-                <tr>
-                    <td>Atividade</td>
-                    <td>Turma</td>
-                    <td>Professor</td>
-                </tr>
-                <tr>
-                    <td>Dança</td>
-                    <td>Terça-feira<br></br>
-                    7:00-7:45<br></br>
-                    Sala 1
-                    </td>
-                    <td>Null</td>
-                </tr>
-                <tr>
-                  <td>Coral</td>
-                  <td>TERÇA-FEIRA<br></br>
-                  7:45-8:00<br></br>
-                  SALA 3</td>
-                  <td>Null</td>
-                </tr>
-                <tr>
-                  <td>Musculação</td>
-                  <td>QUARTA-FEIRA<br></br>
+              <tr className="border border-indigo-500 divide-x divide-indigo-500">
+                  <td>Atividade</td>
+                  <td>Turma</td>
+                  <td>Professor</td>
+              </tr>
+              <tr className="border border-indigo-500 divide-x divide-indigo-500">
+                  <td>Dança</td>
+                  <td>Terça-feira<br></br>
                   7:00-7:45<br></br>
-                  SALA 1</td>
+                  Sala 1
+                  </td>
                   <td>Null</td>
-                </tr>
+              </tr>
+              <tr className="border border-indigo-500 divide-x divide-indigo-500">
+                <td>Coral</td>
+                <td>TERÇA-FEIRA<br></br>
+                7:45-8:00<br></br>
+                SALA 3</td>
+                <td>Null</td>
+              </tr>
+              <tr className="border border-indigo-500 divide-x divide-indigo-500">
+                <td>Musculação</td>
+                <td>QUARTA-FEIRA<br></br>
+                7:00-7:45<br></br>
+                SALA 1</td>
+                <td>Null</td>
+              </tr>
             </table>
         </div>
     </section>
