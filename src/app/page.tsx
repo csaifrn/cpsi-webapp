@@ -3,7 +3,8 @@
 import Image from "next/image"
 import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card"
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar"
-import { Button } from "@/components/ui/button"
+import { Button } from "@/components/ui/button" 
+
 
 const DadosPessoais = () => {
   return (
@@ -60,52 +61,60 @@ const DadosPessoais = () => {
 
 const Atividades = () => {
   return (
-    <section className=" text-gray-900 font-courier-prime h-screen flex flex-col max-w-md items-center">
-        <h2 className=" font-bold text-lg">Atividades</h2>
-        <nav className="justify-items-start bg-green-500"> 
-            <button>Extensão</button>
-            <button>Ensino</button>
+    <section className="text-gray-900 font-courier-prime flex flex-col items-center bg-white p-5  mx-auto">
+      <div className="border pb-4 border-indigo-500 w-full rounded-md shadow-md bg-white text-lg max-w-md">
+        <h2 className=" font-extrabold border-b border-indigo-500 p-3 pl-7.5">Atividades</h2>
+        <nav className="justify-items-start p-4 pl-7.5"> 
+            <button className="border-b-3 border-indigo-500 font-extrabold">Extensão</button>
+            <button className="pl-4">Ensino</button>
         </nav>
         <div >
-            <table className="uppercase w-20 border border-indigo-500 rounded-md">
-              <tr className="border border-indigo-500 divide-x divide-indigo-500">
-                  <td>Atividade</td>
-                  <td>Turma</td>
-                  <td>Professor</td>
-              </tr>
-              <tr className="border border-indigo-500 divide-x divide-indigo-500">
+            <table className="uppercase border border-indigo-500 rounded-md w-full text-center">
+              <thead>
+                <tr className="border border-indigo-500 divide-x divide-indigo-500">
+                  <th className=" font-normal p-3 px-4">Atividade</th>
+                  <th className=" font-normal p-3">Turma</th>
+                  <th className=" font-normal p-3">Professor</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="border border-indigo-500 divide-x divide-indigo-500">
                   <td>Dança</td>
                   <td>Terça-feira<br></br>
                   7:00-7:45<br></br>
                   Sala 1
                   </td>
                   <td>Null</td>
-              </tr>
-              <tr className="border border-indigo-500 divide-x divide-indigo-500">
-                <td>Coral</td>
-                <td>TERÇA-FEIRA<br></br>
-                7:45-8:00<br></br>
-                SALA 3</td>
-                <td>Null</td>
-              </tr>
-              <tr className="border border-indigo-500 divide-x divide-indigo-500">
-                <td>Musculação</td>
-                <td>QUARTA-FEIRA<br></br>
-                7:00-7:45<br></br>
-                SALA 1</td>
-                <td>Null</td>
-              </tr>
+                </tr>
+                <tr className="border border-indigo-500 divide-x divide-indigo-500">
+                  <td>Coral</td>
+                  <td>TERÇA-FEIRA<br></br>
+                  7:45-8:00<br></br>
+                  SALA 3</td>
+                  <td>Null</td>
+                </tr>
+                <tr className="border border-indigo-500 divide-x divide-indigo-500">
+                  <td>Musculação</td>
+                  <td>QUARTA-FEIRA<br></br>
+                  7:00-7:45<br></br>
+                  SALA 1</td>
+                  <td>Null</td>
+                </tr>
+              </tbody>
             </table>
         </div>
+      </div>
     </section>
   );
 }
+
 
 const Home = () => {
     return (
         <div className="min-h-screen bg-gray-100">
             <DadosPessoais />
             <Atividades />
+            <crad2 />
         </div>
     );
 }
