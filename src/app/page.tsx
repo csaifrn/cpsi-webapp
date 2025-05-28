@@ -1,7 +1,7 @@
 "use client"
 
 import Image from "next/image"
-import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card"
+import { Card, CardContent, CardFooter, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar"
 import { Button } from "@/components/ui/button" 
 
@@ -108,13 +108,24 @@ const Atividades = () => {
   );
 }
 
+const TabelaShad = () => {
+  return (
+    <Card className="max-w-md mx-auto w-full mt-8 bg-white shadow-lg mb-8 font-courier-prime text-lg">
+      <CardHeader>
+      <CardTitle>Atividades</CardTitle>
+      
+    </CardHeader>
+    </Card>
+
+  )
+}
 
 const Home = () => {
     return (
         <div className="min-h-screen bg-gray-100">
             <DadosPessoais />
             <Atividades />
-            <crad2 />
+            <TabelaShad />
         </div>
     );
 }
