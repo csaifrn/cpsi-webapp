@@ -1,29 +1,40 @@
 import Image from "next/image";
+import {SquareUser, Menu, User, LockKeyhole} from 'lucide-react';
+import { Button } from "@/components/ui/button"
 
 export default function Home() {
     const Cabecalho = () => {
     return (
       <>
-        <header className="bg-indigo-500 text-white">
-          <ol className="nav">
-            <li><a href="#">Contato</a></li>
-            <li><a href="#">Menu</a></li>
+        <header className="bg-indigo-500 text-white h-20">
+          <ol className="flex flex-row justify-around gap-80">
+            <li><a href="#"><SquareUser className=" h-10 w-10 mt-5"/></a></li>
+            <li><a href="#"><Menu className=" h-10 w-10 mt-5"/></a></li>
           </ol>
         </header>
 
         <main className="text-indigo-500">
-          <h1 className="m-12 text-center">Cadastre-se</h1>
+          <h1 className="m-12 text-2xl text-center">CADASTRAR-SE</h1>
           <form className="formulario">
             <div className="m-12">
               <label htmlFor="cpf">CPF</label><br />
-              <input className="text-neutral-500" type="text" id="cpf" placeholder="Digite seu CPF" required />
+              <div className="flex flex-row mt-3 gap-3">
+                <User className="text-neutral-400"/>
+                <input className="text-neutral-500" type="text" id="cpf" placeholder="Digite seu CPF" required />
+              </div>
             </div>
             <div className="m-12">
               <label htmlFor="senha">Senha</label><br />
-              <input className="text-neutral-500" type="password" id="senha" placeholder="Digite sua senha" required />
+              <div className="flex flex-row mt-3">
+                <LockKeyhole className="text-neutral-400"/>
+                <input className="text-neutral-500" type="password" id="senha" placeholder="Digite sua senha" required />
+              </div>   
             </div>
-            <button className="bg-indigo-500 text-white w-80 rounded-2xl h-12" type="submit" >CADASTRAR-SE</button>
+            <div className="flex justify-center">
+              <Button className="bg-indigo-500 text-white w-100 rounded-3xl h-12">CADASTRE-SE</Button>
+            </div>
           </form> 
+          
         </main>
 
         <footer className="mt-20 mb-20 text-center">
