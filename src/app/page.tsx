@@ -1,6 +1,5 @@
 import { Poppins, ZCOOL_KuaiLe } from "next/font/google";
 import "./globals.css";
- 
 import { zodResolver } from "@hookform/resolvers/zod"
 import { useForm } from "react-hook-form"
 import { z } from "zod"
@@ -31,10 +30,12 @@ const LoginModal = () => {
                     <img src="/perfil-transparente.svg"/>
                 </h2>
                 <figure>
-                    <img 
-                        src="/menu-sanduiche.svg"
-                        alt="botão de Menu "
-                    />
+                    <Button className="bg-transparent border-0">
+                        <img
+                            src="/menu-sanduiche.svg"
+                            alt="botão de Menu "
+                        />
+                    </Button>
                 </figure>
             </header>
             <main className="bg-white w-full h-full ">
@@ -81,4 +82,3 @@ const LoginModal = () => {
 };
 
 export default LoginModal ;
-
