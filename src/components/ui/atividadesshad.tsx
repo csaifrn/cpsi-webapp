@@ -11,10 +11,10 @@ const AtividadesShad = () => {
       </CardHeader>
       <CardContent className="p-0 mt-0">
         <nav className="flex pl-6 pb-4">
-          <Button variant="ghost" className="border-b-4 border-indigo-500 font-extrabold rounded-none px-4 py-2 text-indigo-600">
+          <Button variant="ghost" className="border-b-4 border-indigo-500 font-extrabold rounded-none px-4 py-2 text-indigo-600 cursor-pointer">
             Extensão
           </Button>
-          <Button variant="ghost" className="px-4 py-2">
+          <Button variant="ghost" className="px-4 py-2 cursor-pointer">
             Ensino
           </Button>
         </nav>
