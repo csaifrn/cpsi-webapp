@@ -113,8 +113,8 @@ const Atividades = () => {
 
 const Home = () => {
     return (
-        <div className="min-h-screen bg-gray-100">
-            <DadosPessoais />
+        <div className="min-h-screen bg-white">
+
             <Atividades />
             <AtividadesShad />
         </div>
