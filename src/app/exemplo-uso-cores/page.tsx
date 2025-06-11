@@ -64,8 +64,8 @@ const Teste = () => {
             <div className="w-20 h-20 bg-second-red"></div>
             <div className="w-20 h-20 bg-second-yellow"></div>                   
         </div>
-    );
-    }
+);
+}
 const Page = () => {
     return (
         <>
