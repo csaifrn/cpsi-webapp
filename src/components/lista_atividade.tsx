@@ -12,7 +12,7 @@ export function List() {
   ];
 
   return (
-    <div className="mt-10 h-[400px] overflow-y-auto space-y-4 px-4">
+    <div className="mt-10 ml-5 h-[400px] overflow-y-auto space-y-4 border-1 border-gray-400 rounded-md max-w-90">
       {atividades.map((act, idx) => (
         <Card key={idx} {...act} />
 

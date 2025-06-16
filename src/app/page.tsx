@@ -8,17 +8,17 @@ export default function Home() {
   return (
     <>
       <Header />
-      <div className="flex flex-col items-center justify-center min-h-screen">
-        <main className="text-indigo-500">
-          <h1 className="m-12 text-2xl text-center">
+      <div className="flex flex-col items-center justify-center min-h-screen font-mono">
+        <main className="text-principal-blue">
+          <h1 className="m-12 text-lg text-center">
             Selecione as atividades que <br /> o idoso deseja fazer parte
           </h1>
 
           <Pesquisar />
-          <List />
+          <List/>
 
           <div className="flex justify-end m-10">
-            <Button className="bg-indigo-500 text-white w-35 rounded-full h-8">
+            <Button className="bg-principal-blue text-white w-35 rounded-full h-8">
               Avançar <ArrowRight />
             </Button>
           </div>
