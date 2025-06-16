@@ -5,8 +5,8 @@ import { Label } from "@/components/ui/label"
 
 export function Form() {
   return (
-    <div>
-        <main className='text-principal-blue flex flex-col items-center justify-center min-h-screen'>
+    <div  className='text-principal-blue flex flex-col items-center justify-center min-h-screen font-mono'>
+        <main>
             <h1 className="m-12 text-2xl text-center">CADASTRAR-SE</h1>
             <form className="formulario">
                 <Label htmlFor="cpf" className='text-lg'>CPF</Label><br/>
