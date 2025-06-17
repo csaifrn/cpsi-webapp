@@ -4,6 +4,30 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
+  --color-principal-blue-foreground: var(--principal-blue-foreground);
+  --color-principal-blue: var(--principal-blue);
+  --color-primaria-green-foreground: var(--primaria-green-foreground);
+  --color-primaria-green: var(--primaria-green);
+  --color-primaria-yellow-foreground: var(--primaria-yellow-foreground);
+  --color-primaria-yellow: var(--primaria-yellow);
+  --color-primaria-red-foreground: var(--primaria-red-foreground);
+  --color-primaria-red: var(--primaria-red);
+  --color-primaria-blue-foreground: var(--primaria-blue-foreground);
+  --color-primaria-blue: var(--primaria-blue);
+  --color-second-green-foreground: var(--second-green-foreground);
+  --color-second-green: var(--second-green);
+  --color-second-yellow-foreground: var(--second-yellow-foreground);
+  --color-second-yellow: var(--second-yellow);
+  --color-second-red-foreground: var(--second-red-foreground);
+  --color-second-red: var(--second-red);
+  --color-second-blue-foreground: var(--second-blue-foreground);
+  --color-second-blue: var(--second-blue);
+  --color-complementa-green-foreground: var(--complementa-green-foreground);
+  --color-complementa-green: var(--complementa-green);
+  --color-complementa-yellow-foreground: var(--complementa-yellow-foreground);
+  --color-complementa-yellow: var(--complementa-yellow);
+  --color-complementa-red-foreground: var(--complementa-red-foreground);
+  --color-complementa-red: var(--complementa-red);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
@@ -44,6 +68,30 @@
 }
 
 :root {
+  --principal-blue-foreground: #5F6DD7;
+  --principal-blue: #5F6DD7;
+  --primaria-green-foreground:#6BF28D;
+  --primaria-green: #6BF28D;
+  --primaria-yellow-foreground: #F0D67F;
+  --primaria-yellow: #F0D67F;
+  --primaria-red-foreground: #F07F86;
+  --primaria-red: #F07F86;
+  --primaria-blue-foreground: #7F8CF0;
+  --primaria-blue: #7F8CF0;
+  --second-green-foreground:#79D590;
+  --second-green: #79D590;
+  --second-yellow-foreground: #F0D67F;
+  --second-yellow: #F0D67F;
+  --second-red-foreground: #F07F86;
+  --second-red: #F07F86;
+  --second-blue-foreground: #96A0EE;
+  --second-blue: #96A0EE;
+  --complementa-green-foreground: #5ED67C;
+  --complementa-green: #5ED67C;
+  --complementa-yellow-foreground: #D6BB5E;
+  --complementa-yellow: #D6BB5E;
+  --complementa-red-foreground: #D65E65;
+  --complementa-red: #D65E65;
   --radius: 0.625rem;
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
