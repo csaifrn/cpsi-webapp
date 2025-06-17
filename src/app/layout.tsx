@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-	title: "CPSI login",
-	description: "Projeto CPSI - Página de login",
+	title: "CPSI",
+	description: "CPSI Aplicativo administrativo",
 };
 
 export default function RootLayout({
@@ -26,7 +26,6 @@ export default function RootLayout({
 	return (
 		<html lang="pt-br">
 			<body>
-				<Head />
 				<main className="bg-white w-full h-full ">{children}</main>
 			</body>
 		</html>
