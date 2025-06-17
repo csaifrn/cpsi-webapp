@@ -1,19 +1,8 @@
 import { Poppins, ZCOOL_KuaiLe } from "next/font/google";
 import "./globals.css";
-import { zodResolver } from "@hookform/resolvers/zod";
-import { useForm } from "react-hook-form";
-import { z } from "zod";
 import React from "react";
+import { User, LockKeyhole } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import {
-	Form,
-	FormControl,
-	FormDescription,
-	FormField,
-	FormItem,
-	FormLabel,
-	FormMessage,
-} from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Label } from "@radix-ui/react-label";
 const poppins = Poppins({
@@ -33,14 +22,10 @@ const LoginModal = () => {
 								<Label className="text-blue-500 self-start">CPF</Label>
 
 								<div className="flex flex-row border-b-1 border-gray-200 w-75 gap-x-6 px-2">
-									<figure className="flex justify-center items-center">
-										<img
-											className=""
-											height="18px"
-											width="18px"
-											src="/Vector.svg"
-										/>
-									</figure>
+                                    <figure className="flex justify-center items-center">
+
+                                        <User height="22px" width="22px" className="text-gray-400"/>
+                                    </figure>
 									<Input
 										type="text"
 										placeholder="Digite seu CPF"
@@ -52,12 +37,11 @@ const LoginModal = () => {
 								<Label className="text-blue-500 self-start">Senha</Label>
 								<div className="flex flex-row border-b-1 border-gray-200 w-75 gap-5.5 px-2">
 									<figure className="flex justify-center items-center">
-										<img
-											className=""
-											height="23px"
-											width="23px"
-											src="/lock_FILL0_wght400_GRAD0_opsz48 1.svg"
-										/>
+                                        <LockKeyhole
+                                            className="text-gray-400"
+                                            height="22px"
+                                            width="22px"
+                                        />
 									</figure>
 									<Input
 										type="password"
