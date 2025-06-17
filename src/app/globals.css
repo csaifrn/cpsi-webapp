@@ -1,9 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import "tailwindcss";
 @import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
+  --color-principal-blue-foreground: var(--principal-blue-foreground);
+  --color-principal-blue: var(--principal-blue);
+  --color-primaria-green-foreground: var(--primaria-green-foreground);
+  --color-primaria-green: var(--primaria-green);
+  --color-primaria-yellow-foreground: var(--primaria-yellow-foreground);
+  --color-primaria-yellow: var(--primaria-yellow);
+  --color-primaria-red-foreground: var(--primaria-red-foreground);
+  --color-primaria-red: var(--primaria-red);
+  --color-primaria-blue-foreground: var(--primaria-blue-foreground);
+  --color-primaria-blue: var(--primaria-blue);
+  --color-second-green-foreground: var(--second-green-foreground);
+  --color-second-green: var(--second-green);
+  --color-second-yellow-foreground: var(--second-yellow-foreground);
+  --color-second-yellow: var(--second-yellow);
+  --color-second-red-foreground: var(--second-red-foreground);
+  --color-second-red: var(--second-red);
+  --color-second-blue-foreground: var(--second-blue-foreground);
+  --color-second-blue: var(--second-blue);
+  --color-complementa-green-foreground: var(--complementa-green-foreground);
+  --color-complementa-green: var(--complementa-green);
+  --color-complementa-yellow-foreground: var(--complementa-yellow-foreground);
+  --color-complementa-yellow: var(--complementa-yellow);
+  --color-complementa-red-foreground: var(--complementa-red-foreground);
+  --color-complementa-red: var(--complementa-red);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
