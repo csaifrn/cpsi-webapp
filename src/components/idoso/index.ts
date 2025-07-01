@@ -1,3 +1,4 @@
-import CardIdosoPerfilAtividades from "./perfil/CardAtividades";
+import CardIdosoPerfilAtividades from "@/components/idoso/perfil/CardAtividades";
+import CardDadosPessoais from "@/components/idoso/perfil/CardDadosPessoais";
 
-export {CardIdosoPerfilAtividades};
+export {CardIdosoPerfilAtividades, CardDadosPessoais};
