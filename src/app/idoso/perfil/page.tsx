@@ -18,8 +18,8 @@ export default function page() {
 			</div>
 
 			<CardDadosPessoais />
-			<CardDocumentacao />
 			<CardIdosoPerfilAtividades />
+			<CardDocumentacao />
 		</section>
 	);
 }
