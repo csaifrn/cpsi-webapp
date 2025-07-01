@@ -68,11 +68,31 @@
   --radius-xl: calc(var(--radius) + 4px);
 }
 
-body {
-  font-family: poppins, sans-serif;
-}
-
 :root {
+  --principal-blue-foreground: #5F6DD7;
+  --principal-blue: #5F6DD7;
+  --primaria-green-foreground:#6BF28D;
+  --primaria-green: #6BF28D;
+  --primaria-yellow-foreground: #F0D67F;
+  --primaria-yellow: #F0D67F;
+  --primaria-red-foreground: #F07F86;
+  --primaria-red: #F07F86;
+  --primaria-blue-foreground: #7F8CF0;
+  --primaria-blue: #7F8CF0;
+  --second-green-foreground:#79D590;
+  --second-green: #79D590;
+  --second-yellow-foreground: #F0D67F;
+  --second-yellow: #F0D67F;
+  --second-red-foreground: #F07F86;
+  --second-red: #F07F86;
+  --second-blue-foreground: #96A0EE;
+  --second-blue: #96A0EE;
+  --complementa-green-foreground: #5ED67C;
+  --complementa-green: #5ED67C;
+  --complementa-yellow-foreground: #D6BB5E;
+  --complementa-yellow: #D6BB5E;
+  --complementa-red-foreground: #D65E65;
+  --complementa-red: #D65E65;
   --radius: 0.625rem;
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);

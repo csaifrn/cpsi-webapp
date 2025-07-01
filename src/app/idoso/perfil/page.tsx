@@ -1,7 +1,8 @@
 import React from "react";
-import { CardIdosoPerfilAtividades, CardDadosPessoais } from "@/components/idoso";
+import { CardIdosoPerfilAtividades, CardDadosPessoais, CardDocumentacao } from "@/components/idoso";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
+import { Car } from "lucide-react";
 
 export default function page() {
 	return (
@@ -17,6 +18,7 @@ export default function page() {
 			</div>
 
 			<CardDadosPessoais />
+			<CardDocumentacao />
 			<CardIdosoPerfilAtividades />
 		</section>
 	);
