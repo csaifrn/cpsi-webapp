@@ -1,5 +1,4 @@
 import { ArrowRight } from 'lucide-react';
-import { ArrowLeft } from 'lucide-react';
 import { Header } from '@/components/idoso/pre-inscricao/head';
 import { Pesquisar } from '@/components/idoso/pre-inscricao/pesquisa';
 import { List } from '@/components/idoso/pre-inscricao/lista_atividade';
@@ -11,27 +10,18 @@ export default function Home() {
       <Header />
       <div className="flex flex-col items-center justify-center min-h-screen font-mono">
         <main className="text-principal-blue">
-          <h1 className="m-12 text-2xl text-center">
+          <h1 className="m-12 text-lg text-center">
             Selecione as atividades que <br /> o idoso deseja fazer parte
           </h1>
 
           <Pesquisar />
           <List/>
-          <div className="flex justify-evenly">
-             
-            <div className="m-10">
-                <Button className="bg-principal-blue text-white w-30 rounded-full h-8">
-                    <ArrowLeft />Voltar
-                </Button>
-            </div>
-            <div className="m-10">
-                <Button className="bg-principal-blue text-white w-30 rounded-full h-8">
-                    Avançar <ArrowRight />
-                </Button>
-            </div>
+
+          <div className="flex justify-end m-10">
+            <Button className="bg-principal-blue text-white w-35 rounded-full h-8">
+              Avançar <ArrowRight />
+            </Button>
           </div>
-         
-          
         </main>
       </div>
     </>
