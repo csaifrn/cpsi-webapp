@@ -15,7 +15,7 @@ export function Card({ title, teacher, time }: ActivityCardProps) {
             <p className="text-sm">{teacher} &nbsp; {time}</p>
           </div>
         </div>
-        <Checkbox className="data-[state=checked]:bg-principal-blue data-[state=checked]:border-principal-blue" />
+        <Checkbox className="data-[state=checked]:bg-principal-blue w-6 h-6 border-principal-blue data-[state=checked]:border-principal-blue" />
       </div>
   );
 }
