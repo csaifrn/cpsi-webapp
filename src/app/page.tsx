@@ -5,7 +5,7 @@ import { User, LockKeyhole } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import NavBar from "@/components/idoso/navegacao/Navbar";
+
 const poppins = Poppins({
 	subsets: ["latin"],
 	weight: ["400", "500", "600", "700"],
@@ -14,7 +14,7 @@ const poppins = Poppins({
 const LoginModal = () => {
 	return (
 		<div>
-			<NavBar />
+			
 			<h1 className="text-blue-500 text-xl flex justify-center text-center font-medium py-9">
 				Seja bem-vindo<br></br>Faça login ou cadastre-se
 			</h1>

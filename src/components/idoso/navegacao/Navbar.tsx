@@ -1,16 +1,7 @@
-import {
-    NavigationMenu,
-    NavigationMenuContent,
-    NavigationMenuIndicator,
-    NavigationMenuItem,
-    NavigationMenuLink,
-    NavigationMenuList,
-    NavigationMenuTrigger,
-    NavigationMenuViewport,
-} from "@/components/ui/navigation-menu"
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar"
 import NavbarMenuIdoso from "./NavbarMenuIdoso";
 import NavbarMenuCPSI from "./NavbarMenuCPSI";
+import React from "react";
 
 enum UsuarioEnum {
     cpsi,
@@ -21,6 +12,11 @@ const usuario = {
     tipo: UsuarioEnum.idoso,
     apelido: 'Minora',
     avatar: {url: "/idosa.jpg"},
+}
+const usuario0 = {
+    tipo: UsuarioEnum.cpsi,
+    apelido: 'CPSI',
+    avatar: {url: "/perfil-transparente.svg"},
 }
 
 const NavBar = (props) => {
@@ -36,16 +32,18 @@ const NavBar = (props) => {
         menu = <NavbarMenuCPSI />
     }
 
+    
+
     return (
-        <nav className="max-w-md mx-auto align-items-right bg-amber-600 p-2 display-flex">
-            <div>
+        <nav className="max-w-md mx-auto align-items-right bg-principal-blue-foreground p-2 flex justify-between">
+            <div className="flex items-center gap-2">
                 <Avatar className="w-13 h-13 border-2 border-white rounded-full overflow-hidden">
-                    <AvatarImage src={usuario.avatar.url} alt="Foto do idoso" className="object-cover w-full h-full"/>
+                    <AvatarImage src={usuario.avatar.url} alt="Foto do avatar" className="object-cover w-full h-full"/>
                     <AvatarFallback>ERRO</AvatarFallback>
                 </Avatar>
-                <h2>{usuario.apelido}</h2>
+                <h2 className="text-white">{usuario.apelido}</h2>
             </div>
-            <div>
+            <div className="flex items-center gap-2">
                 {menu}
             </div>
         </nav>
