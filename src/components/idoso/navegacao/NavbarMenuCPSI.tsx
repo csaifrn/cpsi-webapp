@@ -8,7 +8,7 @@ const NavbarMenuCPSI = () => {
         <div className="relative">
 
             <button className="flex flex-col justify-center items-center w-10  cursor-pointer " onClick={() => setOpen(!open)} aria-label="Abrir menu">
-                <img src="menu-sanduiche.svg" alt="Menu" />
+                <img src="/menu-sanduiche.svg" alt="Menu" />
             </button>
 
             {open && (

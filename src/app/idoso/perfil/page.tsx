@@ -1,5 +1,5 @@
 import React from "react";
-import { CardIdosoPerfilAtividades, CardDadosPessoais, CardDocumentacao, NavBarIdoso } from "@/components/idoso";
+import { CardIdosoPerfilAtividades, CardDadosPessoais, CardDocumentacao } from "@/components/idoso";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import NavBar from "@/components/idoso/navegacao/Navbar";
