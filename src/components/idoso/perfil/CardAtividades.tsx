@@ -19,7 +19,7 @@ const CardIdosoPerfilAtividades = () => {
           </Button>
         </nav>
         <div>
-          <table className="uppercase w-full text-center border-t border-indigo-500">
+          <table className="uppercase w-full text-center border-t font-courier-prime border-indigo-500">
             <thead>
               <tr className="divide-x divide-indigo-500 border-b border-indigo-500">
                 <th className="font-normal p-3 px-4">Atividade</th>
