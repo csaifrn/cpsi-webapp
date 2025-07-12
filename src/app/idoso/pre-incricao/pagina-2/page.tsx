@@ -11,12 +11,12 @@ export default function Home() {
   return (
     <>
       <Header />
-      <div className="flex flex-col items-center justify-center min-h-screen font-mono">
-        <main className="text-principal-blue">
-          <h1 className="m-12 text-2xl text-center">
+      <div className="flex flex-col items-center justify-center font-mono">
+        <section className="text-principal-blue">
+          <h1 className="my-6 text-2xl text-center">
             Selecione as atividades que <br /> o idoso deseja fazer parte
           </h1>
-          <Migalhas currentStep={2} />
+          <Migalhas currentStep={3} />
 
           <Pesquisar />
           <List/>
@@ -34,7 +34,7 @@ export default function Home() {
           </div>
          
           
-        </main>
+        </section>
       </div>
     </>
   );
