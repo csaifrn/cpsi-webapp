@@ -20,7 +20,7 @@ export default function Home() {
 
           <Pesquisar />
           <List/>
-          <div className="flex justify-between max-w-90 ml-5"> 
+          <div className="flex justify-between max-w-90 ml-5 mb-5"> 
             <div className="mt-10">
                 <Button className="bg-principal-blue text-white w-25 rounded-full h-7 flex justify-start">
                     <ArrowLeft />Voltar
