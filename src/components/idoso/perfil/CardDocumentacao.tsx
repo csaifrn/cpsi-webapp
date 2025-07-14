@@ -2,9 +2,9 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Table, TableBody, TableCell, TableRow } from "@/components/ui/table";
 const CardDocumentacao = () => {
     return (
-        <Card className="max-w-md mx-auto w-full mt-8 gap-0 bg-white shadow-lg mb-8 font-courier-prime text-lg border border-indigo-500 rounded-md p-0">
-            <CardHeader className="bg-indigo-500 rounded-t-sm">
-                <CardTitle className="font-extrabold text-white border-b border-indigo-500 py-3 text-start text-lg pt-5">
+        <Card className="max-w-md mx-auto w-full mt-8 gap-0 bg-white shadow-lg mb-8 font-courier-prime text-lg border border-principal-blue rounded-md p-0">
+            <CardHeader className="bg-principal-blue rounded-t-sm">
+                <CardTitle className="font-extrabold text-white border-b border-principal-blue py-3 text-start text-lg pt-5">
                     Documentação
                 </CardTitle>
             </CardHeader>

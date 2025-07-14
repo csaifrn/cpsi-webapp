@@ -5,8 +5,8 @@ import Image from "next/image"
 
 const CardDadosPessoais = () => {
   return (
-    <Card className="max-w-md mx-auto w-full bg-white shadow-lg mb-8 font-courier-prime text-lg border border-indigo-500 rounded-md p-0">
-      <CardHeader className="bg-indigo-500 text-white p-8 flex items-center gap-3 rounded-t-sm">
+    <Card className="max-w-md mx-auto w-full bg-white shadow-lg mb-8 font-courier-prime text-lg border border-principal-blue rounded-md p-0">
+      <CardHeader className="bg-principal-blue text-white p-8 flex items-center gap-3 rounded-t-sm">
         <Avatar className="w-16 h-16 border-2 border-white rounded-full">
           <AvatarImage src="/idosa.jpg" alt="Foto do idoso" />
           <AvatarFallback>AC</AvatarFallback>
@@ -23,7 +23,7 @@ const CardDadosPessoais = () => {
         <p>Tel. Contato: (84) 9 9999-9999</p>
       </CardContent>
 
-      <CardFooter className="border-t border-indigo-500 px-7 py-6 text-lg text-gray-900 flex flex-col items-start">
+      <CardFooter className="border-t border-principal-blue px-7 py-6 text-lg text-gray-900 flex flex-col items-start">
         <p className="font-bold mb-1 font-courier-prime">Contato de Emergência</p>
         <p>Nome: Kamila</p>
         <p>Vínculo: Filha</p>
