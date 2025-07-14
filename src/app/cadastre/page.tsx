@@ -15,7 +15,7 @@ const poppins = Poppins({
 
 const Form = () => {
 	return (
-		<div className="text-blue-500 flex flex-col items-center {poppins.className}">
+		<div className="text-principal-blue flex flex-col items-center {poppins.className}">
 			<h1 className="m-12 text-2xl text-center">CADASTRAR-SE</h1>
 			<form className="formulario flex flex-col">
 				<div  className="mb-8">
@@ -48,7 +48,7 @@ const Form = () => {
 						/>
 					</div>
 				</div>
-				<Button className="bg-blue-500 focus:ring-0 text-white w-90 rounded-3xl h-12 mt-20">
+				<Button className="bg-principal-blue focus:ring-0 text-white w-90 rounded-3xl h-12 mt-20">
 					CADASTRE-SE
 				</Button>
 			</form>

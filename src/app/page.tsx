@@ -15,13 +15,13 @@ const LoginModal = () => {
 	return (
 		<div>
 			
-			<h1 className="text-blue-500 text-xl flex justify-center text-center font-medium py-9">
+			<h1 className="text-principal-blue text-xl flex justify-center text-center font-medium py-9">
 				Seja bem-vindo<br></br>Faça login ou cadastre-se
 			</h1>
 			<form className="flex align-center justify-center flex-col">
 				<div className="flex justify-center items-center flex-col">
 					<div className="mb-5">
-						<Label className="text-blue-500 self-start">CPF</Label>
+						<Label className="text-principal-blue self-start">CPF</Label>
 
 						<div className="flex flex-row border-b-1 border-gray-200 w-75 gap-x-6 px-2">
 							<figure className="flex justify-center items-center">
@@ -35,7 +35,7 @@ const LoginModal = () => {
 						</div>
 					</div>
 					<div>
-						<Label className="text-blue-500 self-start">Senha</Label>
+						<Label className="text-principal-blue self-start">Senha</Label>
 						<div className="flex flex-row border-b-1 border-gray-200 w-75 gap-5.5 px-2">
 							<figure className="flex justify-center items-center">
 								<LockKeyhole
@@ -54,7 +54,7 @@ const LoginModal = () => {
 					<a href="" className="text-xs text-gray-400 mt-1 ml-45">
 						Esqueceu a senha?
 					</a>
-					<Button className="w-75 h-10 text-sm text-white bg-blue-500 rounded-4xl mt-5 ">
+					<Button className="w-75 h-10 text-sm text-white bg-principal-blue rounded-4xl mt-5 ">
 						login
 					</Button>
 				</div>
