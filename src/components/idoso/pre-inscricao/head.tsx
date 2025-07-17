@@ -1,3 +1,4 @@
+'use client';
 import { SquareUser, Menu } from 'lucide-react';
 
 export function Header() {
