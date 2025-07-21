@@ -4,10 +4,11 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
-
+import Nav from "@/components/idoso/pre-inscricao/page3/Nav";
 import { Button } from "@/components/ui/button"
 import Header from "@/components/idoso/pre-inscricao/Header"
 import { CardDia } from "@/components/idoso/pre-inscricao/CardDia"
+import CardPreinscricao from '@/components/idoso/pre-inscricao/CardPreinscricao';
 
 const disponibilidadeSchema = z.object({
   disponibilidade: z.record(z.array(z.string())),
@@ -51,8 +52,8 @@ export default function PreInscricaoPage() {
   return (
     <>
       <Header />
-
-      <div className="p-4 max-w-md mx-auto ">
+      
+      <CardPreinscricao>
         <h1 className="text-principal-blue text-center text-lg font-semibold mb-6 font-mono">
           Quais seus horários livres?
         </h1>
@@ -68,15 +69,8 @@ export default function PreInscricaoPage() {
           ))}
         </div>
 
-        <div className="flex justify-end mt-6">
-          <Button
-            className="bg-principal-blue hover:bg-principal-blue/80 font-mono"
-            onClick={handleSubmit(() => onSubmit())}
-          >
-            Avançar
-          </Button>
-        </div>
-      </div>
+        <Nav onNext={() => {console.log("Avançar")}} />
+      </CardPreinscricao>
     </>
   );
 }

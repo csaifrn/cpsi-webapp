@@ -1,25 +1,32 @@
+"use client";
+
 import { Header } from "@/components"
 import React, { use } from "react";
 import Nav from "@/components/idoso/pre-inscricao/page3/Nav";
 import Forms from "@/components/idoso/pre-inscricao/page3/Forms";
-import {  
-  useFormField,
-  Form,
-  FormItem,
-  FormLabel,
-  FormControl,
-  FormDescription,
-  FormMessage,
-  FormField, 
+import {
+    useFormField,
+    Form,
+    FormItem,
+    FormLabel,
+    FormControl,
+    FormDescription,
+    FormMessage,
+    FormField,
 } from "@/components/ui/form";
+import { Car } from "lucide-react";
+import { Card } from "@/components/idoso/pre-inscricao/card_atividade";
+import CardPreinscricao from "@/components/idoso/pre-inscricao/CardPreinscricao";
 
 
 export default function Paginapre() {
     return (
-        <div>
+        <>
             <Header />
-            <Forms />
-            <Nav />
-        </div>
+            <CardPreinscricao>
+                <Forms />
+                <Nav onBack={() => {console.log("Voltar")}} onNext={() => {console.log("Avançar")}} />
+            </CardPreinscricao>
+        </>
     );
 }

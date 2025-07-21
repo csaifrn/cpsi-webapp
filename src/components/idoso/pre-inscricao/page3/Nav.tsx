@@ -1,12 +1,18 @@
 import { ArrowLeft, ArrowRight } from "lucide-react";
-import React, { use } from "react";
+import React from "react";
 import { Button } from "@/components/ui/button";
 
-const Nav = () => {
+interface NavProps {
+  onBack?: () => void;
+  onNext?: () => void;
+}
+
+const Nav = ({ onBack, onNext }: NavProps) => {
     return (
-            <div className="flex gap-30 mt-4 justify-center">
-                    <Button className="justify-center items-center text-xs bg-principal-blue rounded-full w-25 h-6"><ArrowLeft/> Voltar</Button>  
-                    <Button className="justify-center items-center text-xs bg-principal-blue rounded-full w-25 h-6 flex justify-center items-center">Avançar <ArrowRight/></Button>                 
+            <div className="mt-5 max-w-full mx-auto flex justify-between">
+                    {onBack && <Button className="flex justify-center items-center text-xs bg-principal-blue rounded-full w-25 h-6" onClick={() => onBack()}><ArrowLeft/> Voltar</Button>}
+                    {!onBack && onNext && <div></div>}
+                    {onNext && <Button className="flex justify-center items-center text-xs bg-principal-blue rounded-full w-25 h-6" onClick={() => onNext()}><ArrowRight/> Avançar</Button>}                
             </div>
     )
 };

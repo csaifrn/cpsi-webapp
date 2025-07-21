@@ -5,7 +5,7 @@ import { Search, ChevronDown } from "lucide-react";
 
 export function Pesquisar() {
   return (
-    <div className="ml-5 mr-5 flex items-center border border-primaria-blue rounded-full overflow-hidden w-full max-w-90 ">
+    <div className=" flex items-center border border-primaria-blue rounded-full overflow-hidden w-full max-w-full ">
       <div className="pl-4 pr-2">
         <Search className="text-black h-5 w-5" />
       </div>
