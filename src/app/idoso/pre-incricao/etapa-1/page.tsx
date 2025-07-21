@@ -53,7 +53,7 @@ export default function PreInscricaoPage() {
       <Header />
 
       <div className="p-4 max-w-md mx-auto ">
-        <h1 className="text-principal-blue text-center font-mono text-lg font-semibold mb-6 font-mono">
+        <h1 className="text-principal-blue text-center text-lg font-semibold mb-6 font-mono">
           Quais seus horários livres?
         </h1>
 
