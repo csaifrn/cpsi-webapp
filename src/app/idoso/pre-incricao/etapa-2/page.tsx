@@ -11,6 +11,7 @@ import { useForm, FormProvider } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import CardPreinscricao from '@/components/idoso/pre-inscricao/CardPreinscricao';
 import Nav from "@/components/idoso/pre-inscricao/page3/Nav";
+import NavPreinscricao from '@/components/idoso/pre-inscricao/page3/Nav';
 
 const schema = z.object({
   atividades: z.array(z.string()).min(1, "Selecione pelo menos uma atividade"),
@@ -49,7 +50,7 @@ export default function Home() {
               )}
             </form>
           </FormProvider>
-          <Nav onBack={() => {console.log("Voltar")}} onNext={() => {console.log("Avançar")}} />
+          <NavPreinscricao onBack={() => {console.log("Voltar")}} onNext={() => {console.log("Avançar")}} />
       </CardPreinscricao>
     </>
   );

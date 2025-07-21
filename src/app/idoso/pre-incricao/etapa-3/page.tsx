@@ -17,6 +17,7 @@ import {
 import { Car } from "lucide-react";
 import { Card } from "@/components/idoso/pre-inscricao/card_atividade";
 import CardPreinscricao from "@/components/idoso/pre-inscricao/CardPreinscricao";
+import NavPreinscricao from "@/components/idoso/pre-inscricao/page3/Nav";
 
 
 export default function Paginapre() {
@@ -25,7 +26,7 @@ export default function Paginapre() {
             <Header />
             <CardPreinscricao>
                 <Forms />
-                <Nav onBack={() => {console.log("Voltar")}} onNext={() => {console.log("Avançar")}} />
+                <NavPreinscricao onBack={() => {console.log("Voltar")}} onNext={() => {console.log("Avançar")}} />
             </CardPreinscricao>
         </>
     );

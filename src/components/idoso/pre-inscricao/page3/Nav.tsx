@@ -7,7 +7,7 @@ interface NavProps {
   onNext?: () => void;
 }
 
-const Nav = ({ onBack, onNext }: NavProps) => {
+const NavPreinscricao = ({ onBack, onNext }: NavProps) => {
     return (
             <div className="mt-5 max-w-full mx-auto flex justify-between">
                     {onBack && <Button className="flex justify-center items-center text-xs bg-principal-blue rounded-full w-25 h-6" onClick={() => onBack()}><ArrowLeft/> Voltar</Button>}
@@ -17,4 +17,4 @@ const Nav = ({ onBack, onNext }: NavProps) => {
     )
 };
 
-export default Nav;
+export default NavPreinscricao;

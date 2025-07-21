@@ -9,6 +9,7 @@ import { Button } from "@/components/ui/button"
 import Header from "@/components/idoso/pre-inscricao/Header"
 import { CardDia } from "@/components/idoso/pre-inscricao/CardDia"
 import CardPreinscricao from '@/components/idoso/pre-inscricao/CardPreinscricao';
+import NavPreinscricao from "@/components/idoso/pre-inscricao/page3/Nav";
 
 const disponibilidadeSchema = z.object({
   disponibilidade: z.record(z.array(z.string())),
@@ -69,7 +70,7 @@ export default function PreInscricaoPage() {
           ))}
         </div>
 
-        <Nav onNext={() => {console.log("Avançar")}} />
+        <NavPreinscricao onNext={() => {console.log("Avançar")}} />
       </CardPreinscricao>
     </>
   );
