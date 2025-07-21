@@ -4,12 +4,9 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
-import Nav from "@/components/idoso/pre-inscricao/page3/Nav";
-import { Button } from "@/components/ui/button"
 import Header from "@/components/idoso/pre-inscricao/Header"
 import { CardDia } from "@/components/idoso/pre-inscricao/CardDia"
-import CardPreinscricao from '@/components/idoso/pre-inscricao/CardPreinscricao';
-import NavPreinscricao from "@/components/idoso/pre-inscricao/page3/Nav";
+import { CardPreinscricao, CardHeaderPreinscricao, NavPreinscricao, MigalhasPreinscricao } from "@/components/idoso/pre-inscricao";
 
 const disponibilidadeSchema = z.object({
   disponibilidade: z.record(z.array(z.string())),
@@ -53,12 +50,10 @@ export default function PreInscricaoPage() {
   return (
     <>
       <Header />
-      
-      <CardPreinscricao>
-        <h1 className="text-principal-blue text-center text-lg font-semibold mb-6 font-mono">
-          Quais seus horários livres?
-        </h1>
 
+      <CardPreinscricao>
+        <CardHeaderPreinscricao title="Quais seus horários livres?" />
+        <MigalhasPreinscricao />
         <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 justify-items-center">
           {diasDaSemana.map((dia) => (
             <CardDia
@@ -70,7 +65,7 @@ export default function PreInscricaoPage() {
           ))}
         </div>
 
-        <NavPreinscricao onNext={() => {console.log("Avançar")}} />
+        <NavPreinscricao onNext={() => { console.log("Avançar") }} />
       </CardPreinscricao>
     </>
   );

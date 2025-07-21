@@ -7,12 +7,7 @@ import { Input } from "@/components/ui/input";
 const Forms = () => {
     return (
         <div className="font-courier-prime max-w-md mx-auto flex flex-col justify-center ">
-            <h3 className="flex mt-4  align-middle justify-center text-center text-principal-blue text-lg">Cadastre um idoso inserindo <br></br> os dados solicitados</h3>
-            <div className="flex gap-1 mt-4 justify-center align-middle">
-                <div className="border-2 bg-principal-blue border-principal-blue w-2.5 h-2.5 rounded-full"></div>
-                <div className="border-2 border-principal-blue w-2.5 h-2.5 rounded-full"></div>
-                <div className="border-2 border-principal-blue w-2.5 h-2.5 rounded-full"></div>
-            </div>
+            
             <div className="flex flex-col mt-4 gap-1 ">
                 <Label className="text-principal-blue text-left">CPF</Label>
                 <Input type="text" placeholder="Digite o CPF do idoso" className="flex pl-1 w-full h-8 text-gray-800 text-xs border-b-2 border-t-white border-r-white border-l-white border-b-gray-300 text-shadow-none rounded-0xl" />

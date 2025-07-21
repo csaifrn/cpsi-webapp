@@ -1,7 +1,7 @@
 'use client';
 import { cn } from "@/lib/utils";
 
-export function Migalhas({ currentStep = 1, totalSteps = 3 }) {
+const MigalhasPreinscricao = ({ currentStep = 1, totalSteps = 3 }) => {
   return (
     <div className="flex justify-center items-center gap-[6px] m-2 mb-4">
       {Array.from({ length: totalSteps }).map((_, index) => (
@@ -18,3 +18,5 @@ export function Migalhas({ currentStep = 1, totalSteps = 3 }) {
     </div>
   );
 }
+
+export default MigalhasPreinscricao;

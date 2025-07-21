@@ -1,17 +1,13 @@
 'use client';
 
-import { ArrowRight, ArrowLeft, Car } from 'lucide-react';
 import { Header } from '@/components/idoso/pre-inscricao/head';
 import { Pesquisar } from '@/components/idoso/pre-inscricao/pesquisa';
 import { List } from '@/components/idoso/pre-inscricao/lista_atividade';
-import { Migalhas } from '@/components/idoso/pre-inscricao/migalhas_de_pao';
-import { Button } from "@/components/ui/button";
 import { z } from "zod";
 import { useForm, FormProvider } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import CardPreinscricao from '@/components/idoso/pre-inscricao/CardPreinscricao';
-import Nav from "@/components/idoso/pre-inscricao/page3/Nav";
-import NavPreinscricao from '@/components/idoso/pre-inscricao/page3/Nav';
+import { CardPreinscricao, CardHeaderPreinscricao, NavPreinscricao, MigalhasPreinscricao } from "@/components/idoso/pre-inscricao";
+
 
 const schema = z.object({
   atividades: z.array(z.string()).min(1, "Selecione pelo menos uma atividade"),
@@ -35,10 +31,8 @@ export default function Home() {
     <>
       <Header />
       <CardPreinscricao>
-          <h1 className="my-6 text-2xl text-center">
-            Selecione as atividades que <br /> o idoso deseja fazer parte
-          </h1>
-          <Migalhas currentStep={2} />
+          <CardHeaderPreinscricao title="Selecione as atividades que o idoso irá fazer parte" />
+          <MigalhasPreinscricao currentStep={2} />
 
           <FormProvider {...methods}>
             <form onSubmit={handleSubmit(aoEnviar)}>
