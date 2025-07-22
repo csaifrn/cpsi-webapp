@@ -1,5 +1,7 @@
 "use client";
-
+import z from "zod";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { useForm } from "react-hook-form";
 import { Header } from "@/components"
 import React, { use } from "react";
 import Forms from "@/components/idoso/pre-inscricao/page3/Forms";
