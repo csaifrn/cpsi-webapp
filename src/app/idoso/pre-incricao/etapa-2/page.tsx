@@ -1,6 +1,7 @@
 'use client';
 
-import { Header } from '@/components/idoso/pre-inscricao/head';
+import NavBar from "@/components/idoso/navegacao/Navbar";
+import { usuario_cpsi } from "@/types/usuario";
 import { Pesquisar } from '@/components/idoso/pre-inscricao/pesquisa';
 import { List } from '@/components/idoso/pre-inscricao/lista_atividade';
 import { z } from "zod";
@@ -29,7 +30,7 @@ export default function Home() {
 
   return (
     <>
-      <Header />
+      <NavBar usuario={usuario_cpsi} />
       <CardPreinscricao>
           <CardHeaderPreinscricao title="Selecione as atividades que o idoso irá fazer parte" />
           <MigalhasPreinscricao currentStep={2} />

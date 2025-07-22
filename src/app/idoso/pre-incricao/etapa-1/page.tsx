@@ -4,7 +4,8 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
-import Header from "@/components/idoso/pre-inscricao/Header"
+import NavBar from "@/components/idoso/navegacao/Navbar";
+import { usuario_cpsi } from "@/types/usuario";
 import { CardDia } from "@/components/idoso/pre-inscricao/CardDia"
 import { CardPreinscricao, CardHeaderPreinscricao, NavPreinscricao, MigalhasPreinscricao } from "@/components/idoso/pre-inscricao";
 
@@ -49,7 +50,7 @@ export default function PreInscricaoPage() {
 
   return (
     <>
-      <Header />
+      <NavBar usuario={usuario_cpsi} />
 
       <CardPreinscricao>
         <CardHeaderPreinscricao title="Quais seus horários livres?" />

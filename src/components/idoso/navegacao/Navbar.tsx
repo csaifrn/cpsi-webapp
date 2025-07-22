@@ -2,26 +2,18 @@ import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar"
 import NavbarMenuIdoso from "./NavbarMenuIdoso";
 import NavbarMenuCPSI from "./NavbarMenuCPSI";
 import React from "react";
+import { UsuarioType, UsuarioEnum } from "@/types/usuario";
 
-enum UsuarioEnum {
-    cpsi,
-    idoso,
-    responsavel
-}
-const usuario = {
-    tipo: UsuarioEnum.idoso,
-    apelido: 'Minora',
-    avatar: {url: "/idosa.jpg"},
-}
-const usuario0 = {
-    tipo: UsuarioEnum.cpsi,
-    apelido: 'CPSI',
-    avatar: {url: "/perfil-transparente.svg"},
+
+
+interface NavBarProps {
+    usuario: UsuarioType;
+    hidden?: boolean;
 }
 
-const NavBar = (props) => {
+const NavBar: React.FC<NavBarProps> = ({ usuario, hidden }) => {
     // const [usuario] = useContext(UsuarioContexto);
-    if (props.hidden) {
+    if (hidden) {
         return null;
     }
 
@@ -35,7 +27,7 @@ const NavBar = (props) => {
     
 
     return (
-        <nav className="max-w-md mx-auto align-items-right bg-principal-blue-foreground p-2 flex justify-between">
+        <nav className="w-full mx-auto align-items-right bg-principal-blue-foreground p-2 flex justify-between">
             <div className="flex items-center gap-2">
                 <Avatar className="w-13 h-13 border-2 border-white rounded-full overflow-hidden">
                     <AvatarImage src={usuario.avatar.url} alt="Foto do avatar" className="object-cover w-full h-full"/>

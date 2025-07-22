@@ -1,6 +1,7 @@
 "use client";
 
-import { Header } from "@/components"
+import NavBar from "@/components/idoso/navegacao/Navbar";
+import { usuario_cpsi } from "@/types/usuario";
 import React, { use } from "react";
 import Forms from "@/components/idoso/pre-inscricao/page3/Forms";
 
@@ -11,7 +12,7 @@ import { CardPreinscricao, CardHeaderPreinscricao, NavPreinscricao, MigalhasPrei
 export default function Paginapre() {
     return (
         <>
-            <Header />
+            <NavBar usuario={usuario_cpsi} />
             <CardPreinscricao>
                 <CardHeaderPreinscricao title="Cadastre um idoso inserindo os dados solicitados" />
                 <MigalhasPreinscricao currentStep={3} />
