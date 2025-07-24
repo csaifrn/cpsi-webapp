@@ -21,7 +21,7 @@ export default function DocumentosPage() {
     <div className="flex flex-col min-h-screen bg-white">
       <Navbar usuario={usuario} />
 
-      <main className="flex-1 px-4 pt-4 pb-28 max-w-xs mx-auto">
+      <main className="flex-1 px-4 pt-4 pb-28 max-w-xs mx-auto font-courier-prime">
         <h1 className="text-center text-principal-blue font-mono mb-4">
           Adicione fotos dos documentos solicitados em cada campo
         </h1>
