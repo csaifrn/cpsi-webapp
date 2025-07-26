@@ -66,13 +66,13 @@ function LoginModal() {
 								{...register("cpf")}
 								placeholder="Digite seu CPF"
 								className="w-75 h-8 text-gray-800 text-xs border-0 text-shadow-none rounded-0xl"
-							/>
-							{errors.cpf && (
-								<span className="text-red-500 text-xs">
-									{errors.cpf.message}
-								</span>
-							)}
+								/>
 						</div>
+						{errors.cpf && (
+							<span className="text-red-500 text-xs text-end">
+								{errors.cpf.message}
+							</span>
+						)}
 					</div>
 					<div>
 						<Label className="text-principal-blue self-start">Senha</Label>
@@ -90,12 +90,12 @@ function LoginModal() {
 								placeholder="Digite sua senha"
 								className="w-70 h-8 text-gray-800 text-xs flex justify-center border-0 text-shadow-none rounded-0xl"
 							/>
-							{errors.senha && (
-								<span className="text-red-500 text-xs">
-									{errors.senha.message}
-								</span>
-							)}
 						</div>
+						{errors.senha && (
+							<span className="text-red-500 text-xs">
+								{errors.senha.message}
+							</span>
+						)}
 					</div>
 					<a href="" className="text-xs text-gray-400 mt-1 ml-45">
 						Esqueceu a senha?
