@@ -1,3 +1,4 @@
+"use client";
 import { Poppins, ZCOOL_KuaiLe } from "next/font/google";
 import { User, LockKeyhole } from "lucide-react";
 import { Button } from "@/components/ui/button";
