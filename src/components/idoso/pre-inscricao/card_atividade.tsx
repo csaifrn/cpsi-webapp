@@ -26,8 +26,8 @@ export function Card({ title, teacher, time }: ActivityCardProps) {
   };
 
   return (
-    <div className="w-80 m-5 border border-primaria-blue rounded-xl p-3 flex justify-between items-center text-principal-blue font-mono">
-      <div className="flex items-center gap-4">
+    <div className="w-90 m-5 border border-primaria-blue rounded-xl p-3 flex justify-between items-center text-principal-blue font-mono">
+      <div className="flex items-center gap-4 pl-5">
         <div>
           <p className="text-lg font-semibold">{title}</p>
           <p className="text-sm">{teacher} &nbsp; {time}</p>
