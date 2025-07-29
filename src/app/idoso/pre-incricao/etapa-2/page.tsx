@@ -3,11 +3,10 @@
 import NavBar from "@/components/idoso/navegacao/Navbar";
 import { usuario_cpsi } from "@/types/usuario";
 import { Pesquisar } from '@/components/idoso/pre-inscricao/pesquisa';
-import { List } from '@/components/idoso/pre-inscricao/lista_atividade';
 import { z } from "zod";
 import { useForm, FormProvider } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { CardPreinscricao, CardHeaderPreinscricao, NavPreinscricao, MigalhasPreinscricao } from "@/components/idoso/pre-inscricao";
+import { CardPreinscricao, CardHeaderPreinscricao, NavPreinscricao, MigalhasPreinscricao, AtividadeLista } from "@/components/idoso/pre-inscricao";
 
 
 const schema = z.object({
@@ -38,7 +37,7 @@ export default function Home() {
           <FormProvider {...methods}>
             <form onSubmit={handleSubmit(aoEnviar)}>
               <Pesquisar />
-              <List />
+              <AtividadeLista />
 
               {errors.atividades && (
                 <span className="text-red-500 block mt-2">{errors.atividades.message}</span>

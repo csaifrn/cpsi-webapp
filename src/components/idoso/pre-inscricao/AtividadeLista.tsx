@@ -1,9 +1,9 @@
 'use client';
-import { Card } from "./CardAtividade";
+import { CardAtividade } from "./CardAtividade";
 
 
 
-export function List() {
+export function AtividadeLista() {
   const atividades = [
     { title: "Dança – Turma 1", teacher: "Prof. Julio", time: "12:35 – 14:00" },
     { title: "Coral – Turma 1", teacher: "Prof. Liliane", time: "08:45 – 10:00" },
@@ -17,7 +17,7 @@ export function List() {
   return (
     <div className="mt-5 h-[400px] overflow-y-auto space-y-4 border-1 border-gray-400 rounded-md max-w-full">
       {atividades.map((act, idx) => (
-        <Card key={idx} {...act}/>
+        <CardAtividade key={idx} {...act}/>
       ))}
     </div>
   );

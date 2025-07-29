@@ -9,7 +9,7 @@ interface ActivityCardProps {
   time: string;
 }
 // Idoso/etapa 2: Card de Atividade
-export function Card({ title, teacher, time }: ActivityCardProps) {
+export function CardAtividade({ title, teacher, time }: ActivityCardProps) {
   const { setValue, watch } = useFormContext<{ atividades: string[] }>();
 
   // Escuta se o checkbox está selecionado
