@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button";
 
 const IdosoHomeMat = () => {
     return (
-        <div className="flex justify-center items-center my-4">
+        <div className="flex justify-center items-center my-4 font-courier-prime">
           <Card className="p-5 pt-6 h-57 bg-white shadow-md w-80 flex justify-center">
             <div className="space-y-4">
               <Button

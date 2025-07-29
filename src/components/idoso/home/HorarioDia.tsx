@@ -7,9 +7,9 @@ const Horario = () => {
     return (        
         <div className="border-2 border-gray-200 rounded-lg w-80 mx-auto">
           <div className="bg-principal-blue text-white text-center py-3 rounded-t-lg mb-0.5">
-            <h2 className="text-2xl font-bold">Atividade de Hoje</h2>
+            <h2 className="text-2xl font-bold font-courier-prime">Atividade de Hoje</h2>
           </div>
-          <Table>
+          <Table className="font-courier-prime">
             <TableHeader>
               <TableRow className="border-b-2 border-principal-blue">
                 <TableHead className="text-center text-sm w-[150px] h-[50px] text-gray-700 font-semibold">ATIVIDADE</TableHead>
