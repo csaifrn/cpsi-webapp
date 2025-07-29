@@ -1,7 +1,7 @@
 import NavBar from "@/components/idoso/navegacao/Navbar";
 import { usuario_cpsi } from "@/types/usuario";
 import { Pesquisar } from "@/components/idoso/pre-inscricao/pesquisa";
-import { CardHome, BotaoHome } from "@/components/home";
+import { CardHome, BotaoHome, CardBotaoHome } from "@/components/home";
 
 const Home = () => {
   return (
@@ -9,17 +9,12 @@ const Home = () => {
       <NavBar usuario={usuario_cpsi} />
 
       <CardHome>
-        <div className="m-5 mt-7">
+        <div className="m-4 mt-7">
           <Pesquisar />
         </div>
 
-        <div className="m-5 items-center border border-gray-400 rounded-md max-w-full">
-          <BotaoHome
-            imagem="/idosos.png"
-            texto="Idosos"
-            bg="bg-yellow-200"
-            imageSize="w-16"
-          />
+        <CardBotaoHome>
+          <BotaoHome imagem="/idosos.png" texto="Idosos" bg="bg-yellow-200" />
           <BotaoHome imagem="/album.png" texto="Turmas" bg="bg-red-400" />
           <BotaoHome
             imagem="/clipboard-signature.png"
@@ -36,7 +31,7 @@ const Home = () => {
             texto="Cadastro"
             bg="bg-emerald-400"
           />
-        </div>
+        </CardBotaoHome>
       </CardHome>
     </>
   );

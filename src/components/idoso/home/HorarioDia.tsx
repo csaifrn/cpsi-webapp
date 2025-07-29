@@ -5,7 +5,7 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@
 
 const Horario = () => {
     return (        
-        <div className="border-2 border-gray-200 rounded-lg w-80 mx-auto">
+        <div className="border-2 border-gray-200 rounded-lg m-4">
           <div className="bg-principal-blue text-white text-center py-3 rounded-t-lg mb-0.5">
             <h2 className="text-2xl font-bold font-courier-prime">Atividade de Hoje</h2>
           </div>

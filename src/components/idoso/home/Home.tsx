@@ -10,7 +10,7 @@ import { BotaoHome } from "@/components/home";
 const IdosoHomeMat = () => {
     return (
       <div className="flex justify-center items-center my-4 font-courier-prime">
-        <Card className="p-5 pt-6 bg-white shadow-md flex justify-center">
+        <Card className="p-5 pt-6 bg-white flex justify-center">
           <div className="space-y-4">
             <BotaoHome
               imagem="/idosos.png"

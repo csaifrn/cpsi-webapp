@@ -1,5 +1,5 @@
 'use client';
-import { Card } from "./card_atividade";
+import { Card } from "./CardAtividade";
 
 
 
