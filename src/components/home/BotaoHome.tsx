@@ -1,13 +1,13 @@
 import { Card } from "@/components/ui/card";
 
-interface PainelCardProps {
+interface BotaoHomeProps {
   imagem: string;
   texto: string;
   bg: string;
   imageSize?: string;
 }
 
-const PainelCard = ({ imagem, texto, bg, imageSize = "w-12" }: PainelCardProps) => {
+const BotaoHome = ({ imagem, texto, bg, imageSize = "w-12" }: BotaoHomeProps) => {
   return (
     <Card className={`${bg} w-90 m-5 gap-4`}>
       <div className="flex justify-stretch items-center">
@@ -18,4 +18,4 @@ const PainelCard = ({ imagem, texto, bg, imageSize = "w-12" }: PainelCardProps) 
   );
 };
 
-export default PainelCard;
+export default BotaoHome;
