@@ -9,7 +9,7 @@ interface ActivityCardProps {
   time: string;
 }
 
-export function Card({ title, teacher, time }: ActivityCardProps) {
+function Card({ title, teacher, time }: ActivityCardProps) {
   const { setValue, watch } = useFormContext<{ atividades: string[] }>();
 
   // Escuta se o checkbox está selecionado
