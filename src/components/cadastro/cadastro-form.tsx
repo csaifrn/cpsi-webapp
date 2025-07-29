@@ -6,6 +6,7 @@ import { User, LockKeyhole } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import { withMask } from "use-mask-input";
 
 const CadastreSchema = z.object({
   cpf: z
@@ -50,6 +51,10 @@ const Form = () => {
               id="cpf"
               {...register("cpf")}
               placeholder="Digite seu CPF"
+              ref={withMask("999.999.999-99", {
+                placeholder: "_",
+                showMaskOnHover: true,
+              })}
             />
           </div>
           {errors.cpf && (
