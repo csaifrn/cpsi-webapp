@@ -8,8 +8,8 @@ interface ActivityCardProps {
   teacher: string;
   time: string;
 }
-
-function Card({ title, teacher, time }: ActivityCardProps) {
+// Idoso/etapa 2: Card de Atividade
+export function Card({ title, teacher, time }: ActivityCardProps) {
   const { setValue, watch } = useFormContext<{ atividades: string[] }>();
 
   // Escuta se o checkbox está selecionado
