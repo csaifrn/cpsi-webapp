@@ -2,8 +2,9 @@
 
 import NavBar from "@/components/idoso/navegacao/Navbar";
 import { usuario_cpsi } from "@/types/usuario";
-import React, { use } from "react";
+import React from "react";
 import Forms from "@/components/idoso/pre-inscricao/page3/Forms";
+
 
 import { CardPreinscricao, CardHeaderPreinscricao, NavPreinscricao, MigalhasPreinscricao } from "@/components/idoso/pre-inscricao";
 
