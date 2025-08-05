@@ -1,6 +1,11 @@
+"use client";
+
 import { Poppins, ZCOOL_KuaiLe } from "next/font/google";
 import "./globals.css";
 import React from "react";
+import { useForm } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { z } from "zod";
 import { User, LockKeyhole } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -11,14 +16,43 @@ const poppins = Poppins({
 	weight: ["400", "500", "600", "700"],
 });
 
-const LoginModal = () => {
+const loginschema = z.object({
+	cpf: z
+		.string()
+		.min(11, "Por favor, insira seu CPF")
+		.max(11, "Por favor, insira seu CPF"),
+	senha: z
+		.string()
+		.min(8, "Por favor, insira sua senha"),
+});
+
+type LoginFormData = z.infer<typeof loginschema>;
+
+
+function LoginModal() {
+	const {
+		register,
+		handleSubmit,
+		formState: { errors },
+	} = useForm<LoginFormData>({
+		resolver: zodResolver(loginschema),
+		defaultValues: {
+			cpf: "",
+			senha: "",
+		},
+	});
+
+	const Envio = (data: LoginFormData) => {
+		console.log("Login:", data);
+	};
+
 	return (
 		<div>
 			
 			<h1 className="text-principal-blue text-xl flex justify-center text-center font-medium py-9">
 				Seja bem-vindo<br></br>Faça login ou cadastre-se
 			</h1>
-			<form className="flex align-center justify-center flex-col">
+			<form onSubmit={handleSubmit(Envio)} className="flex align-center justify-center flex-col">
 				<div className="flex justify-center items-center flex-col">
 					<div className="mb-5">
 						<Label className="text-principal-blue self-start">CPF</Label>
@@ -29,10 +63,16 @@ const LoginModal = () => {
 							</figure>
 							<Input
 								type="text"
+								{...register("cpf")}
 								placeholder="Digite seu CPF"
 								className="w-75 h-8 text-gray-800 text-xs border-0 text-shadow-none rounded-0xl"
-							/>
+								/>
 						</div>
+						{errors.cpf && (
+							<span className="text-red-500 text-xs text-end">
+								{errors.cpf.message}
+							</span>
+						)}
 					</div>
 					<div>
 						<Label className="text-principal-blue self-start">Senha</Label>
@@ -46,15 +86,21 @@ const LoginModal = () => {
 							</figure>
 							<Input
 								type="password"
+								{...register("senha")}
 								placeholder="Digite sua senha"
 								className="w-70 h-8 text-gray-800 text-xs flex justify-center border-0 text-shadow-none rounded-0xl"
 							/>
 						</div>
+						{errors.senha && (
+							<span className="text-red-500 text-xs">
+								{errors.senha.message}
+							</span>
+						)}
 					</div>
 					<a href="" className="text-xs text-gray-400 mt-1 ml-45">
 						Esqueceu a senha?
 					</a>
-					<Button className="w-75 h-10 text-sm text-white bg-principal-blue rounded-4xl mt-5 ">
+					<Button type="submit"  className="w-75 h-10 text-sm text-white bg-principal-blue rounded-4xl mt-5 ">
 						login
 					</Button>
 				</div>
