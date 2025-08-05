@@ -7,6 +7,7 @@ import React, { use } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { withMask } from "use-mask-input";
+import { cpfmask } from "@/forms/mask/cpf";
 
 
 const schema = z.object({
@@ -61,7 +62,7 @@ function Forms() {
                 
                 <div className="flex flex-col mt-4 gap-1 ">
                     <Label className="text-principal-blue text-left">CPF</Label>
-                    <Input type="text" {...register("cpf")} placeholder="Digite o CPF do idoso" ref={withMask('999.999.999-99', {placeholder: '_', showMaskOnHover: true})} className="flex pl-1 w-full h-8 text-gray-800 text-xs border-b-2 border-t-white border-r-white border-l-white border-b-gray-300 text-shadow-none rounded-0xl" /> 
+                    <Input type="text" {...register("cpf")} placeholder="Digite o CPF do idoso" ref={cpfmask} className="flex pl-1 w-full h-8 text-gray-800 text-xs border-b-2 border-t-white border-r-white border-l-white border-b-gray-300 text-shadow-none rounded-0xl" /> 
                     {errors.cpf && <span className="text-red-500 text-xs">{errors.cpf.message}</span>}
                 </div>
                 <div className="flex flex-col mt-2 gap-1 ">

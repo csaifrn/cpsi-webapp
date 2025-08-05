@@ -10,6 +10,8 @@ import { User, LockKeyhole } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import { withMask } from "use-mask-input";
+import { cpfmask } from "@/forms/mask/cpf";
 
 const poppins = Poppins({
 	subsets: ["latin"],
@@ -65,6 +67,7 @@ function LoginModal() {
 								type="text"
 								{...register("cpf")}
 								placeholder="Digite seu CPF"
+								ref={cpfmask}
 								className="w-75 h-8 text-gray-800 text-xs border-0 text-shadow-none rounded-0xl"
 								/>
 						</div>
