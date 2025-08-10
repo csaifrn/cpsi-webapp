@@ -17,52 +17,52 @@ const Form = () => {
 
         <div className="w-full max-w-sm items-center gap-3 m-5">
             <Label htmlFor="cpf" className="text-indigo-400 text-base">CPF</Label>
-            <Input type="text" id="cpf" className=" border-0 border-b border-gray-300 text-sm placeholder-gray-400 focus:outline-none focus:ring-0 focus:border-gray-400" placeholder="Digite o CPF do professor" />
+            <Input type="text" id="cpf" className="text-sm rounded-none w-full p-2 border-0 border-b-1 border-gray-300 focus:border-blue-500 focus:outline-none" placeholder="Digite o CPF do professor" />
         </div>
 
-        <div className="grid w-full max-w-sm items-center gap-3 m-5">
+        <div className="grid w-full max-w-sm items-center gap-3 m-5 mt-10">
             <Label htmlFor="nome" className="text-indigo-400 text-base">Nome</Label>
-            <Input type="text" id="nome" className=" border-0 border-b border-gray-300 text-sm placeholder-gray-400 focus:outline-none focus:ring-0 focus:border-gray-400" placeholder="Digite o nome do professor" />
+            <Input type="text" id="nome" className=" text-sm rounded-none w-full p-2 border-0 border-b-1 border-gray-300 focus:border-blue-500 focus:outline-none" placeholder="Digite o nome do professor" />
         </div>
-        <div className="flex justify-between w-full max-w-sm">
-            <div className="grid  w-40 items-center gap-3 m-5">
+        <div className=" flex justify-between w-full max-w-sm mt-10">
+            <div className="grid w-45 items-center gap-3 m-5 ">
                 <Label htmlFor="nascimento" className="text-indigo-400 text-base">Data de nascimento</Label>
-                <Input type="date" id="nascimento" className=" border-0 border-b border-gray-300 text-sm placeholder-gray-400 focus:outline-none focus:ring-0 focus:border-gray-400" placeholder="DIA / MES / ANO" />
+                <Input type="text" id="nascimento" className="text-sm rounded-none w-full p-2 border-0 border-b-1 border-gray-300 focus:border-blue-500 focus:outline-none" placeholder="DIA / MES / ANO" />
             </div>
 
-            <div className="grid w-40 items-center gap-3 m-5">
+            <div className=" grid w-40 items-center gap-3 m-5 mr-0">
                 <Label htmlFor="idade" className="text-indigo-400 text-base">Idade</Label>
-                <Input type="number" id="idade" className=" border-0 border-b border-gray-300 text-sm placeholder-gray-400 focus:outline-none focus:ring-0 focus:border-gray-400" placeholder="Idade" disabled />
+                <Input type="number" id="idade" className="text-sm rounded-none w-full p-2 border-0 border-b-1 border-gray-300 focus:border-blue-500 focus:outline-none" placeholder="Gerado"/>
             </div>
         </div>
-        <h2 className="mt-4 font-semibold text-indigo-400 m-5 text-xl">Telefone para contato</h2>
-        <div className="grid w-full max-w-sm items-center gap-3 m-5">
+        <h2 className="mt-10 font-semibold text-indigo-400 m-5 text-xl">Telefone para contato</h2>
+        <div className="grid w-full max-w-sm items-center gap-3 m-5 mt-10">
             <Label htmlFor="nome-contato" className="text-indigo-400 text-base">Nome do contato</Label>
-            <Input type="text" id="nome-contato" className=" border-0 border-b border-gray-300 text-sm placeholder-gray-400 focus:outline-none focus:ring-0 focus:border-gray-400"  placeholder="DIgite o nome do contato de emergência" />
+            <Input type="text" id="nome-contato" className="text-sm rounded-none w-full p-2 border-0 border-b-1 border-gray-300 focus:border-blue-500 focus:outline-none"  placeholder="DIgite o nome do contato de emergência" />
         </div>
 
-        <h2 className="mt-4 font-semibold text-indigo-400 m-5 text-xl">Contato de emergência</h2>
-        <div className="grid w-full max-w-sm items-center gap-3 m-5">
+        <h2 className="mt-10 font-semibold text-indigo-400 m-5 text-xl">Contato de emergência</h2>
+        <div className="grid w-full max-w-sm items-center gap-3 m-5 mt-10">
             <Label htmlFor="nome-emergencia" className="text-indigo-400 text-base">Nome do contato</Label>
-            <Input type="text" id="nome-emergencia" className=" border-0 border-b border-gray-300 text-sm placeholder-gray-400 focus:outline-none focus:ring-0 focus:border-gray-400" placeholder="Digite o nome do contato de emergência" />
+            <Input type="text" id="nome-emergencia" className="text-sm rounded-none w-full p-2 border-0 border-b-1 border-gray-300 focus:border-blue-500 focus:outline-none" placeholder="Digite o nome do contato de emergência" />
         </div>
 
-        <div className="grid w-full max-w-sm items-center gap-3 not-last: m-5">
+        <div className="grid w-full max-w-sm items-center gap-3 not-last: m-5 mt-10">
             <Label htmlFor="telefone-emergencia" className="text-indigo-400 text-base">Telefone do contato</Label>
-            <Input type="tel" id="telefone-emergencia" className=" border-0 border-b border-gray-300 text-sm placeholder-gray-400 focus:outline-none focus:ring-0 focus:border-gray-400" placeholder="Número de telefone do contato de emergência" />
+            <Input type="tel" id="telefone-emergencia" className=" text-sm rounded-none w-full p-2 border-0 border-b-1 border-gray-300 focus:border-blue-500 focus:outline-none" placeholder="Número de telefone do contato de emergência" />
         </div>
 
-        <div className="grid w-full max-w-sm items-center gap-3 m-5">
+        <div className="grid w-full max-w-sm items-center gap-3 m-5 mt-10">
             <Label htmlFor="relacao" className="text-indigo-400 text-base">Relação do contato com o colaborador</Label>
-            <Input type="text" id="relacao" className=" border-0 border-b border-gray-300 text-sm placeholder-gray-400 focus:outline-none focus:ring-0 focus:border-gray-400" placeholder="O que o contato é do colaborador?" />
+            <Input type="text" id="relacao" className="text-sm rounded-none w-full p-2 border-0 border-b-1 border-gray-300 focus:border-blue-500 focus:outline-none" placeholder="O que o contato é do colaborador?" />
         </div>
 
-        <div className="flex justify-between m-5">
-             <div className=" gap-2 md:flex-row">
-                <Button className="bg-indigo-400"><MoveLeft /> Voltar</Button>
+        <div className="flex justify-between m-5 mt-10">
+             <div>
+                <Button className="bg-indigo-400 rounded-3xl h-8 text-xs"> <MoveLeft /> Voltar</Button>
             </div>
-            <div className="gap-2 md:flex-row">
-                <Button className="bg-indigo-400">Avançar <MoveRight/></Button>
+            <div>
+                <Button className="bg-indigo-400 rounded-xl h-8 text-xs">Avançar <MoveRight/></Button>
             </div>
         </div>
            
