@@ -13,8 +13,9 @@ import { cpfmask } from "@/forms/mask/cpf";
 const schema = z.object({
     cpf: z
         .string()
-        .min(11, "CPF é obrigatório")
-        .max(11, "CPF é obrigatório"),
+        .nonempty("CPF é obrigatório")
+        .min(14, "CPF é obrigatório")
+        .max(14, "CPF é obrigatório"),
     nome: z
         .string()
         .min(1, "Nome é obrigatório"),
