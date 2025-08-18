@@ -3,95 +3,121 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card } from "@/components/ui/card";
 import { Label } from "@/components/ui/label";
-import { Menu, User } from "lucide-react";
+import { Menu, User, Search } from "lucide-react";
 import { CardHome } from "@/components/home";
 import Header from "@/components/Header";
 
 export default function HomeConfirmarInscricao() {
   return (
-    <>
+    <div className="flex flex-col font-courier-prime">
       <Header/>
-      <CardHome>
-        <div className="text-center font-medium text-base mt-2 mb-4">
-            De que turma deseja <br /> visualizar as inscrições?
-        </div>
-            <div>
-            <Input
-                type="text"
-                name="search"
-                id="search"
-                autoComplete="off"
-                aria-label="Buscar por turma"
-                placeholder="Buscar por turma"
-                className="mb-4 rounded-full"
-            />
-            </div>
-      <section className="">
+        <div className="flex flex-col items-center mt-6 mb-4">
+          <div className="text-center font-medium text-base mb-4">
+              De que turma deseja <br /> visualizar as inscrições?
+          </div>
+              <div className="pl-3 flex justify-start items-center w-80 bg-white border-2 focus:border-none text-gray-800 text-sm rounded-full">
+              <Search className=""/>
+              <Input
+                  type="text"
+                  name="search"
+                  id="search"
+                  autoComplete="off"
+                  aria-label="Buscar por turma"
+                  placeholder="Buscar por turma"
+                  className="border-none rounded-r-full w-85"
+                  />
+              </div>
 
-      <div className="flex items-center gap-2 mb-4">
-        <Label className="font-bold">Extensão</Label>
-        <span className="font-bold underline">Ensino</span>
-        <Button className="ml-auto bg-primaria-blue text-white px-4 py-1 rounded">Filtro</Button>
+        </div>
+      <CardHome>
+      <section className="border-2 rounded-lg p-4 w-80 flex flex-col bg-white">
+
+      <div className="flex items-center gap-2 mb-9">
+        <Label className="p-2">Extensão</Label>
+        <Label className="font-bol p-2 border-b-2 border-principal-blue">Ensino</Label>
+        <Button className="ml-auto bg-primaria-blue w-28 h-7 text-white px-4 py-1 rounded-lg">Filtro</Button>
       </div>
-      
-        <Card className="flex items-center gap-3 p-3 rounded-lg shadow bg-primaria-red">
-          <img src="/musculacao.svg" alt="Musculação" className="w-10 h-10" />
+      <div className="gap-4">
+        <Card className="flex items-center flex-row gap-4 p-3 rounded-lg shadow bg-primaria-red border-2 border-second-red-2 mb-2 w-71 h-27 font-courier-prime">
+          <img src="/imagens/turmas/icones/musculacao_preenchido.svg" alt="Desenho" className="w-18 h-18" />
           <div>
-            <div className="font-bold text-lg">Turma 1 <span className="font-normal">Musculação</span></div>
-            <div className="text-xs">Prof. Julio</div>
-            <div className="text-xs">12:35 - 14:00</div>
+            <h2 className="font-bold text-2xl">Turma 1</h2>
+            <p className="text-xs font-bold">Musculação</p>
+            <div className="flex flex-row gap-2.5">
+              <p className="text-xs font-bold">Prof. Julio</p>
+              <p className="text-xs">12:35 - 14:00</p>
+            </div>
           </div>
         </Card>
-        <Card className="flex items-center gap-3 p-3 rounded-lg shadow bg-primaria-blue">
-          <img src="/hidroginastica.svg" alt="Hidroginástica" className="w-10 h-10" />
+        <Card className="flex items-center flex-row gap-4 p-3 rounded-lg shadow bg-primaria-yellow mb-2 w-71 h-27">
+          <img src="/imagens/turmas/icones/musculacao_preenchido.svg" alt="Desenho" className="w-18 h-18" />
           <div>
-            <div className="font-bold text-lg">Turma 1 <span className="font-normal">Hidroginástica</span></div>
-            <div className="text-xs">Prof. Julio</div>
-            <div className="text-xs">12:35 - 14:00</div>
+            <h2 className="font-bold text-2xl">Turma 1</h2>
+            <p className="text-xs font-bold">Hidroginástica</p>
+            <div className="flex flex-row gap-3">
+              <p className="text-xs font-bold">Prof. Julio</p>
+              <p className="text-xs">12:35 - 14:00</p>
+            </div>
           </div>
         </Card>
-        <Card className="flex items-center gap-3 p-3 rounded-lg shadow bg-primaria-yellow">
-          <img src="/danca.svg" alt="Dança" className="w-10 h-10" />
+        <Card className="flex items-center flex-row gap-4 p-3 rounded-lg shadow bg-primaria-blue mb-2 w-71 h-27">
+          <img src="/imagens/turmas/icones/musculacao_preenchido.svg" alt="Desenho" className="w-18 h-18" />
           <div>
-            <div className="font-bold text-lg">Turma 1 <span className="font-normal">Dança</span></div>
-            <div className="text-xs">Prof. Julio</div>
-            <div className="text-xs">12:35 - 14:00</div>
+            <h2 className="font-bold text-2xl">Turma 1</h2>
+            <p className="text-xs font-bold">Dança</p>
+            <div className="flex flex-row gap-3">
+              <p className="text-xs font-bold">Prof. Julio</p>
+              <p className="text-xs">12:35 - 14:00</p>
+            </div>
           </div>
         </Card>
-        <Card className="flex items-center gap-3 p-3 rounded-lg shadow bg-primaria-green">
-          <img src="/corporal.svg" alt="Const. Corporal" className="w-10 h-10" />
+        <Card className="flex items-center flex-row gap-4 p-3 rounded-lg shadow bg-primaria-green mb-2 w-71 h-27">
+          <img src="/imagens/turmas/icones/musculacao_preenchido.svg" alt="Desenho" className="w-18 h-18" />
           <div>
-            <div className="font-bold text-lg">Turma 1 <span className="font-normal">Const. Corporal</span></div>
-            <div className="text-xs">Prof. Julio</div>
-            <div className="text-xs">12:35 - 14:00</div>
+            <h2 className="font-bold text-2xl">Turma 1</h2>
+            <p className="text-xs font-bold">Const. Corporal</p>
+            <div className="flex flex-row gap-3">
+              <p className="text-xs font-bold">Prof. Julio</p>
+              <p className="text-xs">12:35 - 14:00</p>
+            </div>
           </div>
         </Card>
-        <Card className="flex items-center gap-3 p-3 rounded-lg shadow bg-primaria-yellow">
-          <img src="/canto.svg" alt="Canto" className="w-10 h-10" />
+        <Card className="flex items-center flex-row gap-4 p-3 rounded-lg shadow bg-primaria-yellow mb-2 w-71 h-27">
+          <img src="/imagens/turmas/icones/musculacao_preenchido.svg" alt="Desenho" className="w-18 h-18" />
           <div>
-            <div className="font-bold text-lg">Turma 1 <span className="font-normal">Canto</span></div>
-            <div className="text-xs">Prof. Julio</div>
-            <div className="text-xs">12:35 - 14:00</div>
+            <h2 className="font-bold text-2xl">Turma 1</h2>
+            <p className="text-xs font-bold">Canto</p>
+            <div className="flex flex-row gap-3">
+              <p className="text-xs font-bold">Prof. Julio</p>
+              <p className="text-xs">12:35 - 14:00</p>
+            </div>
           </div>
         </Card>
-        <Card className="flex items-center gap-3 p-3 rounded-lg shadow bg-primaria-blue">
-          <img src="/ballet.svg" alt="Ballet" className="w-10 h-10" />
+        <Card className="flex items-center flex-row gap-4 p-3 rounded-lg shadow bg-primaria-blue mb-2 w-71 h-27">
+          <img src="/imagens/turmas/icones/musculacao_preenchido.svg" alt="Desenho" className="w-18 h-18" />
           <div>
-            <div className="font-bold text-lg">Turma 1 <span className="font-normal">Ballet</span></div>
-            <div className="text-xs">Prof. Julio</div>
-            <div className="text-xs">12:35 - 14:00</div>
+            <h2 className="font-bold text-2xl">Turma 1</h2>
+            <p className="text-xs font-bold">Ballet</p>
+            <div className="flex flex-row gap-3">
+              <p className="text-xs font-bold">Prof. Julio</p>
+              <p className="text-xs">12:35 - 14:00</p>
+            </div>
           </div>
         </Card>
-        <Card className="flex items-center gap-3 p-3 rounded-lg shadow bg-primaria-yellow">
-          <img src="/desenho.svg" alt="Desenho" className="w-10 h-10" />
+        <Card className="flex items-center flex-row gap-4 p-3 rounded-lg shadow bg-primaria-yellow mb-2 w-71 h-27">
+          <img src="/imagens/turmas/icones/musculacao_preenchido.svg" alt="Desenho" className="w-18 h-18" />
           <div>
-            <div className="font-bold text-lg">Turma 1 <span className="font-normal">Desenho</span></div>
-            <div className="text-xs">Prof. Julio</div>
-            <div className="text-xs">12:35 - 14:00</div>
+            <h2 className="font-bold text-2xl">Turma 1</h2>
+            <p className="text-xs font-bold">Desenho</p>
+            <div className="flex flex-row gap-3">
+              <p className="text-xs font-bold">Prof. Julio</p>
+              <p className="text-xs">12:35 - 14:00</p>
+            </div>
           </div>
         </Card>
+      </div>
       </section>
       </CardHome>
-    </>
+    </div>
   );
 }
