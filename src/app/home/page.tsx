@@ -49,8 +49,8 @@ export default function HomeConfirmarInscricao() {
             </div>
           </div>
         </Card>
-        <Card className="flex items-center flex-row gap-4 p-3 rounded-lg shadow bg-primaria-yellow mb-2 w-71 h-27">
-          <img src="/imagens/turmas/icones/musculacao_preenchido.svg" alt="Desenho" className="w-18 h-18" />
+        <Card className="flex items-center flex-row gap-4 p-3 rounded-lg shadow bg-primaria-blue mb-2 w-71 h-27">
+          <img src="/imagens/turmas/icones/hidroginastica_preenchido.svg" alt="Desenho" className="w-18 h-18" />
           <div>
             <h2 className="font-bold text-2xl">Turma 1</h2>
             <p className="text-xs font-bold">Hidroginástica</p>
@@ -60,8 +60,8 @@ export default function HomeConfirmarInscricao() {
             </div>
           </div>
         </Card>
-        <Card className="flex items-center flex-row gap-4 p-3 rounded-lg shadow bg-primaria-blue mb-2 w-71 h-27">
-          <img src="/imagens/turmas/icones/musculacao_preenchido.svg" alt="Desenho" className="w-18 h-18" />
+        <Card className="flex items-center flex-row gap-4 p-3 rounded-lg shadow bg-primaria-yellow mb-2 w-71 h-27">
+          <img src="/imagens/turmas/icones/danca_preenchido.svg" alt="Desenho" className="w-18 h-18" />
           <div>
             <h2 className="font-bold text-2xl">Turma 1</h2>
             <p className="text-xs font-bold">Dança</p>
@@ -72,7 +72,7 @@ export default function HomeConfirmarInscricao() {
           </div>
         </Card>
         <Card className="flex items-center flex-row gap-4 p-3 rounded-lg shadow bg-primaria-green mb-2 w-71 h-27">
-          <img src="/imagens/turmas/icones/musculacao_preenchido.svg" alt="Desenho" className="w-18 h-18" />
+          <img src="/imagens/turmas/icones/const.corporal_preenchido.svg" alt="Desenho" className="w-18 h-18" />
           <div>
             <h2 className="font-bold text-2xl">Turma 1</h2>
             <p className="text-xs font-bold">Const. Corporal</p>
@@ -83,7 +83,7 @@ export default function HomeConfirmarInscricao() {
           </div>
         </Card>
         <Card className="flex items-center flex-row gap-4 p-3 rounded-lg shadow bg-primaria-yellow mb-2 w-71 h-27">
-          <img src="/imagens/turmas/icones/musculacao_preenchido.svg" alt="Desenho" className="w-18 h-18" />
+          <img src="/imagens/turmas/icones/canto_preenchido.svg" alt="Desenho" className="w-18 h-18" />
           <div>
             <h2 className="font-bold text-2xl">Turma 1</h2>
             <p className="text-xs font-bold">Canto</p>
@@ -94,7 +94,7 @@ export default function HomeConfirmarInscricao() {
           </div>
         </Card>
         <Card className="flex items-center flex-row gap-4 p-3 rounded-lg shadow bg-primaria-blue mb-2 w-71 h-27">
-          <img src="/imagens/turmas/icones/musculacao_preenchido.svg" alt="Desenho" className="w-18 h-18" />
+          <img src="/imagens/turmas/icones/ballet_preenchido.svg" alt="Desenho" className="w-18 h-18" />
           <div>
             <h2 className="font-bold text-2xl">Turma 1</h2>
             <p className="text-xs font-bold">Ballet</p>
@@ -104,8 +104,8 @@ export default function HomeConfirmarInscricao() {
             </div>
           </div>
         </Card>
-        <Card className="flex items-center flex-row gap-4 p-3 rounded-lg shadow bg-primaria-yellow mb-2 w-71 h-27">
-          <img src="/imagens/turmas/icones/musculacao_preenchido.svg" alt="Desenho" className="w-18 h-18" />
+        <Card className="flex items-center flex-row gap-4 p-3 pl-7 rounded-lg shadow bg-primaria-yellow mb-2 w-71 h-27">
+          <img src="/imagens/turmas/icones/desenho_preenchido.svg" alt="Desenho" className="w-14 h-14" />
           <div>
             <h2 className="font-bold text-2xl">Turma 1</h2>
             <p className="text-xs font-bold">Desenho</p>
