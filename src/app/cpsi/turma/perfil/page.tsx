@@ -29,7 +29,7 @@ export default function Page() {
               <h2 className="font-bold text-2xl">Dança</h2>
               <h3 className=" text-xl">Turma 1</h3>
             </div>
-            <Link href="/cpsi/turma/perfil">
+            <Link href="/cpsi/turma/perfil/editar">
               <SquarePen />
             </Link>
           </div>
@@ -53,7 +53,7 @@ export default function Page() {
           <div className="flex items-center justify-between text-white bg-primaria-blue rounded-t-xl px-5 py-3">
             <h2 className="font-bold">Cronograma</h2>
             <Link
-              href="/cpsi/turma/perfil"
+              href="/cpsi/turma/perfil/editar"
               className="text-primaria-blue underline"
             >
               <SquarePen className="text-white" />
@@ -92,7 +92,7 @@ export default function Page() {
           <div className="flex items-center justify-between text-white bg-primaria-blue rounded-t-xl px-5 py-3">
             <h2 className="font-bold">Participantes</h2>
             <Link
-              href="/cpsi/turma/perfil"
+              href="/cpsi/turma/perfil/editar"
               className="text-primaria-blue underline"
             >
               <SquarePen className="text-white" />

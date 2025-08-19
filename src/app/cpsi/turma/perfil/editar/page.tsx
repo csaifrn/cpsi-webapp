@@ -7,7 +7,7 @@ import { SquarePen } from "lucide-react";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-import { Search, ChevronDown } from "lucide-react";
+import { Search, ChevronDown, Trash2 } from "lucide-react";
 
 export default function Page() {
   return (
@@ -32,7 +32,6 @@ export default function Page() {
               <h2 className="font-bold text-2xl">Dança</h2>
               <h3 className=" text-xl">Turma 1</h3>
             </div>
-            
           </div>
           <div className="px-5 my-3">
             <h4 className="font-bold text-sm mb-2">Professor(a)</h4>
@@ -53,9 +52,8 @@ export default function Page() {
         <section className="border border-primaria-blue rounded-xl mb-5">
           <div className="flex items-center justify-between text-white bg-primaria-blue rounded-t-xl px-5 py-3">
             <h2 className="font-bold">Cronograma</h2>
-            
           </div>
-          <div className="px-2">
+          <div className="px-5 ">
             <table className="w-full text-center mb-3">
               <thead>
                 <tr className="border-b border-gray-400">
@@ -71,17 +69,47 @@ export default function Page() {
                     <br />
                     Sala 1
                   </td>
+                  <td>
+                    <Link href={"/cpsi/turma/perfil/editar"}>
+                      <Trash2 className="text-complementa-red-foreground h-5 w-5" />
+                    </Link>
+                  </td>
                 </tr>
-                <tr>
+                <tr className="border-b border-gray-400">
                   <td className="text-left px-3">07:00 - 08:30</td>
                   <td className="px-3">
                     Quinta
                     <br />
                     SALA 1
                   </td>
+                  <td>
+                    <Link href={"/cpsi/turma/perfil/editar"}>
+                      <Trash2 className="text-complementa-red-foreground h-5 w-5" />
+                    </Link>
+                  </td>
                 </tr>
               </tbody>
             </table>
+            <form>
+              <input
+                type="time"
+                className="text-gray-400 h-7 border-gray-400 border-b-2 p-2"
+              />
+              <span className="text-gray-400">-</span>
+              <input
+                type="time"
+                className="text-gray-400 h-7 border-gray-400 border-b-2 p-2"
+              />
+              <input
+                type="text"
+                className="text-gray-400 h-7 w-45 items-end border-gray-400 border-b-2 p-2"
+              />
+            </form>
+            <div className="flex justify-end mb-3">
+              <Button className="bg-principal-blue cursor-pointer hover:bg-principal-blue/80 rounded-full">
+                Adicionar Horário
+              </Button>
+            </div>
           </div>
         </section>
         <section className="border border-primaria-blue rounded-xl mb-5">
