@@ -1,15 +1,24 @@
+"use client";
+import { useState } from "react";
 import NavBar from "@/components/idoso/navegacao/Navbar";
 import { usuario_cpsi } from "@/types/usuario";
 import { CardHome } from "@/components/home";
 import { ArrowLeft } from "lucide-react";
 import Link from "next/link";
-import { SquarePen } from "lucide-react";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Search, ChevronDown, Trash2 } from "lucide-react";
+import {
+  ProfessorSelector,
+  professores,
+} from "@/components/cpsi/turma/SelecaoProfessor";
 
 export default function Page() {
+  const [professorSelecionado, setProfessorSelecionado] = useState(
+    professores[0]
+  );
+
   return (
     <>
       <NavBar usuario={usuario_cpsi} />
@@ -22,7 +31,10 @@ export default function Page() {
             <ArrowLeft />
             <h3 className="font-bold">Voltar</h3>
           </Link>
-          <Button className="text-black cursor-pointer rounded-3xl bg-second-green-foreground hover:bg-second-green-foreground/80">
+          <Button
+            type="submit"
+            className="text-black cursor-pointer rounded-3xl bg-second-green-foreground hover:bg-second-green-foreground/80"
+          >
             Salvar Alterações
           </Button>
         </div>
@@ -35,18 +47,11 @@ export default function Page() {
           </div>
           <div className="px-5 my-3">
             <h4 className="font-bold text-sm mb-2">Professor(a)</h4>
-            <div className="flex items-center gap-3">
-              <Avatar className="w-16 h-16 border-2 border-primaria-blue rounded-full">
-                <AvatarImage
-                  src="/professor.png"
-                  width={55}
-                  height={55}
-                  alt="Foto do professor"
-                />
-                <AvatarFallback>AC</AvatarFallback>
-              </Avatar>
-              <h3 className="text-lg">Liliana dos Santos</h3>
-            </div>
+
+            <ProfessorSelector
+              professorSelecionado={professorSelecionado}
+              onProfessorChange={setProfessorSelecionado}
+            />
           </div>
         </section>
         <section className="border border-primaria-blue rounded-xl mb-5">
@@ -90,26 +95,31 @@ export default function Page() {
                 </tr>
               </tbody>
             </table>
-            <form>
-              <input
-                type="time"
-                className="text-gray-400 h-7 border-gray-400 border-b-2 p-2"
-              />
-              <span className="text-gray-400">-</span>
-              <input
-                type="time"
-                className="text-gray-400 h-7 border-gray-400 border-b-2 p-2"
-              />
-              <input
-                type="text"
-                className="text-gray-400 h-7 w-45 items-end border-gray-400 border-b-2 p-2"
-              />
+            <form className="">
+              <div className="flex mb-2">
+                <input
+                  type="time"
+                  className="text-gray-400 h-7 border-gray-400 border-b-2 p-2"
+                />
+                <span className="text-gray-400">-</span>
+                <input
+                  type="time"
+                  className="text-gray-400 h-7 border-gray-400 border-b-2 p-2"
+                />
+                <input
+                  type="text"
+                  className="text-gray-400 h-7 w-1/2 border-gray-400 border-b-2 p-2 ml-4"
+                />
+              </div>
+              <div className="flex justify-end mb-3">
+                <Button
+                  type="submit"
+                  className="bg-primaria-blue cursor-pointer text-xs hover:bg-primaria-blue/80 rounded-full h-7"
+                >
+                  Adicionar Horário
+                </Button>
+              </div>
             </form>
-            <div className="flex justify-end mb-3">
-              <Button className="bg-principal-blue cursor-pointer hover:bg-principal-blue/80 rounded-full">
-                Adicionar Horário
-              </Button>
-            </div>
           </div>
         </section>
         <section className="border border-primaria-blue rounded-xl mb-5">
@@ -117,6 +127,14 @@ export default function Page() {
             <h2 className="font-bold">Participantes</h2>
           </div>
           <div className="px-5 my-3 mt-4">
+            <div className="flex justify-end mb-3">
+              <Button
+                type="submit"
+                className="bg-second-green-foreground cursor-pointer hover:bg-second-green-foreground/80 text-black rounded-full"
+              >
+                Adicionar aluno
+              </Button>
+            </div>
             <div className=" flex items-center border border-primaria-blue rounded-full overflow-hidden w-full max-w-full ">
               <div className="pl-4 pr-2">
                 <Search className="text-black h-5 w-5" />
@@ -136,7 +154,7 @@ export default function Page() {
               </Button>
             </div>
           </div>
-          <div className="mx-5 my-3 border border-gray-400 py-4 px-2 rounded-lg">
+          <div className="flex items-center justify-between mx-5 my-3 border border-gray-400 py-4 px-2 rounded-lg">
             <div className="flex items-center gap-3">
               <Avatar className="w-16 h-16 border-2 border-primaria-blue rounded-full">
                 <AvatarImage src="/idosa.jpg" alt="Foto do idoso" />
@@ -147,6 +165,7 @@ export default function Page() {
                 <h3>123.456.789-00</h3>
               </div>
             </div>
+            <Trash2 className="text-complementa-red-foreground h-7 w-7 cursor-pointer m-2" />
           </div>
         </section>
       </CardHome>
