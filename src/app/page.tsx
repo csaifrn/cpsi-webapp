@@ -47,12 +47,11 @@ function LoginModal() {
   };
 
   return (
-    <div className="font-courier-prime">
-      <h1 className="text-principal-blue text-xl flex justify-center text-center font-medium py-9">
-        Seja bem-vindo <br />
-        Faça login ou cadastre-se
-      </h1>
-
+		<div>
+			
+			<h1 className="text-principal-blue text-xl flex justify-center text-center font-medium py-9">
+				Seja bem-vindo<br></br>Faça login ou cadastre-se
+			</h1>
       <form
         onSubmit={handleSubmit(Envio)}
         className="flex align-center justify-center flex-col"
@@ -123,30 +122,28 @@ function LoginModal() {
           </Button>
         </div>
       </form>
-
-      <div className="flex justify-center items-center flex-col mt-10">
-        <p className="text-gray-400 text-xs text-center ">
-          Ou faça login também com
-        </p>
-        <Button className="mt-2 w-42 h-8 rounded-4xl border-3 bg-background-white border-gray-300 flex justify-center items-center">
-          <img
-            width="60px"
-            height="60px"
-            src="/logos_google.svg"
-            alt="botão do google"
-          />
-        </Button>
-      </div>
-
-      <p className="text-gray-400 mt-15 text-center text-xs">
-        se não possuir uma conta <br />
-        Cadastre-se{" "}
-        <b className="text-black">
-          <a href="">aqui</a>
-        </b>
-      </p>
-    </div>
-  );
+			<div className="flex justify-center items-center flex-col mt-10">
+				<p className="text-gray-400 text-xs text-center ">
+					Ou faça login também com
+				</p>
+				<Button className="mt-2 w-42 h-8 rounded-4xl border-3 bg-background-white border-gray-300 flex justify-center items-center">
+					<img
+						width="60px"
+						height="60px"
+						src="/logos_google.svg"
+						alt="botão do google"
+					/>
+				</Button>
+			</div>
+			<p className="text-gray-400 mt-15 text-center text-xs">
+				se não possuir uma conta <br />
+				Cadastre-se{" "}
+				<b className="text-black">
+					<a href="">aqui</a>
+				</b>
+			</p>
+		</div>
+	);
 }
 
 export default LoginModal;
