@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card } from "@/components/ui/card";
 import { Label } from "@/components/ui/label";
-import { ArrowLeft, AlertCircle, ChevronRight, Search } from "lucide-react";
+import { ArrowLeft, AlertCircle, ChevronRight, Search, AlertTriangle } from "lucide-react";
 import Header from "@/components/Header";
 import { CardHome } from "@/components/home";
 
@@ -70,7 +70,7 @@ const InscricoesPage = () => {
         </div>
 
         {/* Card da turma */}
-        <Card className="flex flex-row items-center w-80 h-24 gap-3 pr-3 rounded-lg shadow bg-primaria-yellow mb-2">
+        <Card className="flex flex-row items-center w-80 h-19 gap-3 pr-3 rounded-lg shadow bg-primaria-yellow border-second-yellow border-4 mb-2">
             <img src="/imagens/turmas/icones/danca_nao_preenchido.svg" alt="Dança" className="w-12 h-12 ml-3" />
             <div className="flex-1 flex-col gap-2">
             <div className="font-bold text-lg">Dança</div>
@@ -85,7 +85,7 @@ const InscricoesPage = () => {
             <span className="flex justify-center bg-white border-2 w-24 px-2 py-1 rounded-full text-xs font-bold">Vagas: 30</span>
             <span className=" justify-center bg-white border-2 px-2 py-1 rounded-full text-xs font-bold flex items-center gap-1">
             Inscrições: 36
-            <AlertCircle className="w-4 h-4 text-red-500" />
+            <AlertTriangle className="w-3.5 h-3.5 text-red-500" />
             </span>
         </div>
 
