@@ -6,7 +6,7 @@ interface CardPreinscricaoProps {
 
 const CardPreinscricao = ({ children }: CardPreinscricaoProps) => {
     return (
-        <div className="flex flex-col items-center justify-center max-w-md mx-auto">
+        <div className="flex flex-col items-center justify-center max-w-md mx-auto px-2">
             <section className="text-principal-blue w-full">
                 {children}
             </section>
