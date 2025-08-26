@@ -10,7 +10,7 @@ const MigalhasPreinscricao = ({ currentStep = 1, totalSteps = 3 }) => {
           className={cn(
             "rounded-full  w-3 h-3",
             currentStep === index + 1
-              ? "bg-[#3F63F5]" 
+              ? "bg-principal-blue" 
               : "bg-white border-principal-blue border-2"
           )}
         />
