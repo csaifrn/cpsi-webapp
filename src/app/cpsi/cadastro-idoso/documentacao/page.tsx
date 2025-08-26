@@ -2,7 +2,7 @@
 
 import React from "react";
 import Navbar from "@/components/idoso/navegacao/Navbar";
-import { DocumentosImg } from "@/components/idoso/cadastro/DocumentosImg";
+import { DocumentosImg } from "@/components/cpsi/cadastro/DocumentosImg";
 import { UsuarioEnum } from "@/types/usuario";
 import Nav from "@/components/idoso/pre-inscricao/Nav";
 import { useRouter } from 'next/navigation'; 
