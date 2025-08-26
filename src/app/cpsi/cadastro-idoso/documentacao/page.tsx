@@ -6,6 +6,7 @@ import { DocumentosImg } from "@/components/cpsi/cadastro/DocumentosImg";
 import { UsuarioEnum } from "@/types/usuario";
 import Nav from "@/components/idoso/pre-inscricao/Nav";
 import { useRouter } from 'next/navigation'; 
+import MigalhasPreinscricao from "@/components/idoso/pre-inscricao/MigalhasPreinscricao";
 
 const usuario = {
   tipo: UsuarioEnum.idoso,
@@ -26,13 +27,7 @@ export default function DocumentosPage() {
           Adicione fotos dos documentos solicitados em cada campo
         </h1>
 
-        <div className="flex justify-center mb-4">
-          <div className="flex gap-1">
-            <div className="w-2 h-2 rounded-full bg-principal-blue"></div>
-            <div className="w-2 h-2 rounded-full bg-gray-300"></div>
-            <div className="w-2 h-2 rounded-full bg-gray-300"></div>
-          </div>
-        </div>
+        <MigalhasPreinscricao />
 
         <DocumentosImg />
 
