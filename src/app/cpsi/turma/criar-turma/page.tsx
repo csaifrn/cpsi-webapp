@@ -1,11 +1,14 @@
 "use client"
 
-import Header from "@/components/turmas/Header"
+
 import CardHome from "@/components/home/CardHome"
 import { Button } from "@/components/ui/button"
 import { useState } from "react"
-import { Trash } from "lucide-react"
+import { Trash, ArrowLeft } from "lucide-react";
 import Image from "next/image"
+import NavBar from "@/components/idoso/navegacao/Navbar";
+import { usuario_cpsi } from "@/types/usuario";
+
 
 export default function CriarTurma() {
   const cronogramasIniciais = [
@@ -38,12 +41,12 @@ export default function CriarTurma() {
 
   return (
     <>
-      <Header />
+      <NavBar usuario={usuario_cpsi} />
       <main className="bg-white min-h-screen font-courier-prime text-base">
         <CardHome>
           <div className="pt-4 pb-12 space-y-10">
             <button className="flex items-center gap-2 cursor-pointer">
-              <Image src="/seta.png" alt="Voltar" width={18} height={18} />
+              <ArrowLeft />
               <span className="font-bold ">Voltar</span>
             </button>
 
