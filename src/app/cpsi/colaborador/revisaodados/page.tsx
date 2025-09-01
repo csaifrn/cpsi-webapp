@@ -5,6 +5,8 @@ import CardHome from '@/components/home/CardHome'
 import Image from 'next/image'
 import { Button } from "@/components/ui/button";
 import { MigalhasPreinscricao } from "@/components/idoso/pre-inscricao";
+import NavBar from '@/components/idoso/navegacao/Navbar';
+import { usuario_cpsi } from '@/types/usuario';
 
 export default function RevisaoDeDados() {
   const documentos = [
@@ -23,18 +25,7 @@ export default function RevisaoDeDados() {
 
   return (
     <div className="font-courier-prime w-full min-h-screen bg-white flex flex-col">
-      <header className="bg-principal-blue flex items-center justify-between py-4 px-5">
-        <figure>
-            <Button className="bg-white/10 p-2 w-12 h-12 rounded-xl hover:bg-white/10 cursor-pointer">
-            <Image src="/casa.png" alt="Ícone de casa" width={24} height={24} />
-            </Button>
-        </figure>
-        <figure>
-            <Button className="bg-white/10 p-2 w-12 h-12 rounded-xl hover:bg-white/10 cursor-pointer">
-            <Image src="/menu.png" alt="Ícone de menu" width={24} height={24} />
-            </Button>
-        </figure>
-    </header>
+      <NavBar usuario={usuario_cpsi} />
 
       <main className="flex-1">
         <CardHome>
