@@ -5,6 +5,8 @@ import { Button } from "@/components/ui/button";
 import { MoveLeft, MoveRight } from "lucide-react";
 import { ListaDocumentos } from "@/components/professor/ListaDocumento";
 import { Documento } from "@/components/professor/DocumentoCard";
+import { CardHome } from "@/components/home";
+import { Ca } from "zod/v4/locales";
 
 const documentos: Documento[] = [
   { nome: "Documento com foto", status: "ok" },
@@ -28,24 +30,26 @@ export default function Documentacao() {
   return (
     <>
       <NavBar usuario={usuario_cpsi} />
-      <h1 className="my-6 text-xl text-center text-indigo-400">
-        Adicione fotos dos documento <br /> solicitados em cada campo
-      </h1>
-      <MigalhasPreinscricao currentStep={2} />
+      <CardHome>
+        <h1 className="my-6 text-xl text-center text-indigo-400">
+          Adicione fotos dos documento <br /> solicitados em cada campo
+        </h1>
+        <MigalhasPreinscricao currentStep={2} />
 
-      <div className="p-4">
-        <ListaDocumentos documentos={docsNormais} />
-        <ListaDocumentos titulo="Atestados Médicos" documentos={docsAtestados} />
-      </div>
+        <div className="p-4">
+          <ListaDocumentos documentos={docsNormais} />
+          <ListaDocumentos titulo="Atestados Médicos" documentos={docsAtestados} />
+        </div>
 
-      <div className="flex justify-between m-4 mt-10">
-        <Button className="bg-indigo-400 rounded-3xl h-8 text-xs">
-          <MoveLeft /> Voltar
-        </Button>
-        <Button className="bg-indigo-400 rounded-xl h-8 text-xs">
-          Avançar <MoveRight />
-        </Button>
-      </div>
+        <div className="flex justify-between m-4 mt-10">
+          <Button className="bg-indigo-400 rounded-3xl h-8 text-xs">
+            <MoveLeft /> Voltar
+          </Button>
+          <Button className="bg-indigo-400 rounded-xl h-8 text-xs">
+            Avançar <MoveRight />
+          </Button>
+        </div>
+      </CardHome>
     </>
   );
 }
