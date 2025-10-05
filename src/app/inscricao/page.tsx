@@ -24,17 +24,17 @@ export default function HomeConfirmarInscricao() {
                   autoComplete="off"
                   aria-label="Buscar por turma"
                   placeholder="Buscar por turma"
-                  className="border-none rounded-r-full w-85"
+                  className="border-none rounded-r-full w-85 font-courier-prime"
                   />
               </div>
 
         </div>
       <CardHome>
-      <section className="border-2 rounded-lg p-4 w-80 flex flex-col bg-white">
+      <section className="border-2 rounded-lg p-4 w-80 flex flex-col bg-white mb-2">
 
       <div className="flex items-center gap-2 mb-9">
         <Label className="p-2">Extensão</Label>
-        <Label className="font-bol p-2 border-b-2 border-principal-blue">Ensino</Label>
+        <Label className="font-bold p-2 border-b-2 border-principal-blue">Ensino</Label>
         <Button className="ml-auto bg-primaria-blue w-28 h-7 text-white px-4 py-1 rounded-lg">Filtro</Button>
       </div>
       <div className="gap-4">
