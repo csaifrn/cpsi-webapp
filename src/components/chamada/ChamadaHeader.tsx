@@ -18,7 +18,7 @@ const ChamadaHeader = () => (
         <CheckCircle className="h-4 w-4" /> Chamada cadastrada
       </p>
     </div>
-    <Button className="bg-indigo-400 w-92 mb-4">Editar chamada</Button>
+    <Button className="bg-indigo-400 mb-4">Editar chamada</Button>
   </div>
 );
 
