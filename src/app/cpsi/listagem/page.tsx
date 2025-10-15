@@ -2,6 +2,7 @@ import NavBar from "@/components/idoso/navegacao/Navbar"
 import { usuario_cpsi } from "@/types/usuario"
 import { Pesquisar } from "@/components/idoso/pre-inscricao/pesquisa"
 import { ListaProfessores } from "@/components/professor/ListaProfessores"
+import { CardHome } from "@/components/home";
 
 export default function ProfessoresPage() {
   const professores = [
@@ -16,12 +17,14 @@ export default function ProfessoresPage() {
   return (
     <>
       <NavBar usuario={usuario_cpsi} />
-      <div className="flex flex-col items-center max-w-md mx-auto px-4 py-4 font-courier-prime w-full shadow-none">
-        <div className="w-full mb-4">
-          <Pesquisar />
+      <CardHome>
+        <div className="py-4">
+          <div className="w-full mb-4">
+            <Pesquisar />
+          </div>
+          <ListaProfessores professores={professores} />
         </div>
-        <ListaProfessores professores={professores} />
-      </div>
+      </CardHome>
     </>
   )
 }

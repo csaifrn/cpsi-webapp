@@ -8,7 +8,7 @@ interface ProfessorCardProps {
 
 export function ProfessorCard({ nome, cpf }: ProfessorCardProps) {
   return (
-    <Card className="border border-gray-300 w-95 mb-3 p-2 shadow-none">
+    <Card className="border border-gray-300 w-full mb-3 p-2 shadow-none">
       <CardContent className="flex items-center justify-between py-1 px-1">
         <div className="flex items-center gap-3">
           <img
