@@ -1,9 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card } from "@/components/ui/card";
-import { Label } from "@/components/ui/label";
 import { ArrowLeft, AlertCircle, ChevronRight, Search, AlertTriangle } from "lucide-react";
-import Header from "@/components/Header";
+import Navbar from "@/components/idoso/navegacao/Navbar";
+import { usuario_cpsi } from "@/types/usuario";
 import { CardHome } from "@/components/home";
 
 const pessoas = [
@@ -61,7 +61,7 @@ const pessoas = [
 const InscricoesPage = () => {
   return (
     <div className="flex flex-col font-courier-prime">
-      <Header />
+      <Navbar usuario={usuario_cpsi} />
       <CardHome>
         {/* Voltar */}
         <div className="flex items-center mr-60 my-2 gap-2 py-2">
