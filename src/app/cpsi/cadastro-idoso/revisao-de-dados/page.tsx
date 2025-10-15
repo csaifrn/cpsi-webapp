@@ -46,14 +46,14 @@ export default function RevisaoDeDadosIdoso() {
           <div className="flex flex-col gap-6 px-2">
             <CardDadosPessoais />
 
-            <Card className="max-w-md mx-auto w-full mt-8 bg-white shadow-lg mb-8 font-courier-prime text-lg border border-indigo-500 rounded-md p-0">
+            <Card className="max-w-md mx-auto w-full mt-2 bg-white shadow-lg mb-2 font-courier-prime text-lg border border-indigo-500 rounded-md p-0">
               <CardHeader className="bg-principal-blue rounded-t-sm">
                 <CardTitle className="font-extrabold text-white border-b border-principal-blue py-3 text-start text-lg pt-5">
                   Atividades
                 </CardTitle>
               </CardHeader>
               <CardContent className="p-0 mt-0">
-                <nav className="flex pl-6 pb-4">
+                <nav className="flex pl-4 pb-1 mb-3">
                   <Button variant="ghost" className="border-b-4 border-principal-blue font-extrabold rounded-none px-4 py-2 text-indigo-600 cursor-pointer">
                     Extensão
                   </Button>
@@ -62,7 +62,7 @@ export default function RevisaoDeDadosIdoso() {
                   </Button>
                 </nav>
                 <div>
-                  <table className="uppercase w-full text-center border-t font-courier-prime border-principal-blue">
+                  <table className="uppercase w-full text-center border-t font-courier-prime text-sm border-principal-blue">
                     <thead>
                       <tr className="divide-x divide-principal-blue border-b border-principal-blue">
                         <th className="font-normal p-3 px-4">Atividade</th>
@@ -81,7 +81,7 @@ export default function RevisaoDeDadosIdoso() {
                               {atividade.nome}
                               <button
                                 onClick={() => setOpenMenu(openMenu === index ? null : index)}
-                                className="cursor-pointer p-1 rounded hover:bg-gray-200"
+                                className="cursor-pointer p-1 rounded hover:bg-gray-200 flex items-top justify-end"
                               >
                                 <MoreHorizontal size={20} />
                               </button>
@@ -111,11 +111,11 @@ export default function RevisaoDeDadosIdoso() {
             <CardDocumentacao />
 
             <div className="flex justify-between mb-10 gap-4 mt-6">
-              <Button className="bg-principal-blue text-white text-xl px-6 py-2 rounded-full flex items-center gap-2 font-bold cursor-pointer">
+              <Button className="bg-principal-blue text-white text-xl px-5 py-1.5 rounded-full flex items-center gap-2 font-bold cursor-pointer">
                 <ArrowLeft size={18} />
                 Voltar
               </Button>
-              <Button className="bg-principal-blue text-white text-xl px-6 py-2 rounded-full font-bold cursor-pointer">
+              <Button className="bg-principal-blue text-white text-xl px-3.5 py-1.5 rounded-full font-bold cursor-pointer">
                 Confirmar Cadastro
               </Button>
             </div>
