@@ -12,7 +12,7 @@ const Home = () => {
 
       <CardHome>
 
-        <h2 className="flex justify-start mt-8 ml-4"><ArrowLeft className="mr-2"/> Voltar</h2>
+        <h2 className="flex justify-start mt-8 ml-4 cursor-pointer"><ArrowLeft className="mr-2"/> Voltar</h2>
         <h2 className="text-center text-[#5F6DD7] text-xl m-2">Qual tipo de cadastro<br/> deseja realizar?</h2>
         <CardBotaoHome>
           <BotaoHome imagem="/idosos.svg" texto="Idosos" bg="bg-yellow-200" />
