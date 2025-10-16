@@ -11,8 +11,9 @@ export default function Horarios() {
   const [diaSelecionado, setDiaSelecionado] = useState("Terça");
   const dias = ["Segunda", "Terça", "Quarta", "Quinta", "Sexta"];
   return (
+    <>
+      <NavBar usuario={usuario_idoso} />
       <CardHome>
-        <NavBar usuario={usuario_idoso} />
         <div className="py-4 max-w-md mx-auto text-gray-900 font-courier-prime">
           <div className="flex items-center text-lg font-semibold">
             <Button variant="ghost" size="icon" className="mr-2 p-0 h-auto w-auto m-3">
@@ -42,5 +43,6 @@ export default function Horarios() {
 
         <HorarioDia />
       </CardHome>
+    </>
   );
 }
