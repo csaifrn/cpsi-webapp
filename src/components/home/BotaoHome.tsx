@@ -9,7 +9,7 @@ interface BotaoHomeProps {
 
 const BotaoHome = ({ imagem, texto, bg, imageSize = "w-12" }: BotaoHomeProps) => {
   return (
-    <Card className={`${bg} m-4 p-4`}>
+    <Card className={`${bg} m-4 p-4 cursor-pointer`}>
       <div className="flex justify-stretch items-center">
         <img src={imagem} className={`mr-5 ${imageSize}`} />
         <p className="text-2xl">{texto}</p>
