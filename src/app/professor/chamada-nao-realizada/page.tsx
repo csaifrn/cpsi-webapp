@@ -4,7 +4,7 @@ import { Pesquisar } from "@/components/idoso/pre-inscricao/pesquisa";
 import { ArrowLeft } from "lucide-react";
 import { CardHome } from "@/components/home";
 import TurmaCard from "@/components/chamada/TurmaCard";
-import ChamadaHeader from "@/components/chamada/ChamadaHeader";
+import ChamadaHeaderNaoRealizada from "@/components/chamada/ChamadaHeaderNaoRealizada";
 import AlunoCard from "@/components/chamada/AlunoCard";
 
 const Chamada = () => {
@@ -17,7 +17,7 @@ const Chamada = () => {
   ];
 
   return (
-    <>
+    <div>
       <NavBar usuario={usuario_cpsi} />
       <CardHome>
         <h2 className="flex justify-start mt-8 ml-3"><ArrowLeft /> Voltar</h2>
@@ -25,7 +25,7 @@ const Chamada = () => {
           <TurmaCard />
 
           <div className="p-4 border border-gray-300 rounded-2xl shadow-sm">
-            <ChamadaHeader />
+            <ChamadaHeaderNaoRealizada />
             <Pesquisar />
             <div className="space-y-3 p-1 mt-3 pl-2">
               {alunos.map((aluno) => (
@@ -38,9 +38,9 @@ const Chamada = () => {
               ))}
             </div>
           </div>
-        </main>
+      </main>
       </CardHome>
-    </>
+    </div>
   );
 };
 
