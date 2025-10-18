@@ -2,7 +2,7 @@ import NavBar from "@/components/idoso/navegacao/Navbar";
 import { usuario_cpsi } from "@/types/usuario";
 import { Pesquisar } from "@/components/idoso/pre-inscricao/pesquisa";
 import { ArrowLeft } from "lucide-react";
-
+import { CardHome } from "@/components/home";
 import TurmaCard from "@/components/chamada/TurmaCard";
 import ChamadaHeader from "@/components/chamada/ChamadaHeader";
 import AlunoCard from "@/components/chamada/AlunoCard";
@@ -17,29 +17,30 @@ const Chamada = () => {
   ];
 
   return (
-    <div>
+    <>
       <NavBar usuario={usuario_cpsi} />
-      <h2 className="flex justify-start mt-8 ml-5"><ArrowLeft /> Voltar</h2>
+      <CardHome>
+        <h2 className="flex justify-start mt-8 ml-3"><ArrowLeft /> Voltar</h2>
+        <main className="p-4 space-y-4">
+          <TurmaCard />
 
-      <main className="p-4 space-y-4">
-        <TurmaCard />
-
-        <div className="p-4 border border-gray-300 rounded-2xl shadow-sm">
-          <ChamadaHeader />
-          <Pesquisar />
-          <div className="space-y-3 p-1 mt-3 pl-2">
-            {alunos.map((aluno) => (
-              <AlunoCard 
-                key={aluno.id}
-                nome={aluno.nome}
-                cpf={aluno.cpf}
-                foto={aluno.foto}
-              />
-            ))}
+          <div className="p-4 border border-gray-300 rounded-2xl shadow-sm">
+            <ChamadaHeader />
+            <Pesquisar />
+            <div className="space-y-3 p-1 mt-3 pl-2">
+              {alunos.map((aluno) => (
+                <AlunoCard 
+                  key={aluno.id}
+                  nome={aluno.nome}
+                  cpf={aluno.cpf}
+                  foto={aluno.foto}
+                />
+              ))}
+            </div>
           </div>
-        </div>
-      </main>
-    </div>
+        </main>
+      </CardHome>
+    </>
   );
 };
 
